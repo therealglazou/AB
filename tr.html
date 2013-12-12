@@ -56,11 +56,8 @@
           Board's Chapter 7 Task Force on 2 December 2013. This document is the
           editor's draft for resolution of comments received on the "Last Call"
           version.</p>
-        <p>In this draft, there has been a reordering of the content along the
-          lines foreshadowed by <a href="http://www.w3.org/community/w3process/track/issues/59">ISSUE-59</a>.
-          Sections have now been renumbered, the "outline" (heading structure)
-          rebuilt and some headings changed. No content has been deleted since
-          the last commit (except in this introductory material).</p>
+        <p>In this draft, there are some pointers and placeholders for changes
+          expected in response to open issues, most particularly <a href="http://www.w3.org/community/w3process/track/issues/59">ISSUE-59</a>.</p>
         <p>This introductory session (before the chapter title below) will be
           removed when this chapter is re-incorporated into the full process
           document, as per issues 60-64.</p>
@@ -112,13 +109,12 @@
             2 weeks <em>before</em> publication of a Recommendation.</li>
           <li>And it is in HTML5</li>
         </ul>
-        <p>Editorially, I have tried to rationalize requirements, and clarify
-          who is responsible for meeting them. I have also actively removed
-          advice and general statements to keep this version short.</p>
+        <p>Editorially, I have tried to rationalize requirements and clarify who
+          is responsible for meeting them. I have also removed advice and
+          general statements to keep this version short.</p>
       </div>
     </div>
-    <h2>7 <a name="Reports" id="Reports">W3C Technical Report Development
-        Process</a></h2>
+    <h2 id="Reports">7 W3C Technical Report Development Process</h2>
     <p>The W3C technical report development process is the set of steps and
       requirements followed by W3C <a href="http://www.w3.org/2005/10/Process-20051014/groups#GroupsWG">Working
         Groups</a> to standardize Web technology. The W3C technical report
@@ -132,7 +128,7 @@
       <li>promote consistency among specifications</li>
       <li>facilitate royalty-free, interoperable implementations of Web
         Standards, and</li>
-      <li>earn endorsement by W3C and the broader community. </li>
+      <li>earn endorsement by W3C and the broader community.</li>
     </ul>
     <p>See also the licensing goals for W3C Recommendations in <a href="http://www.w3.org/Consortium/Patent-Policy#sec-Licensing">section
         2</a> of the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
@@ -141,65 +137,65 @@
     <h3>Table of Contents</h3>
     <ul id="mozToc">
       <!--mozToc h3 1 h4 2 h5 3-->
-      <li><a href="#mozTocId615339">Table of Contents</a></li>
-      <li><a href="#mozTocId661463">7.1 W3C Technical Reports</a>
+      <li><a href="#rec-advance">7.1 W3C Technical Reports</a>
         <ul>
-          <li><a href="#mozTocId598359">7.1.1 Recommendations and Notes</a></li>
-          <li><a href="#mozTocId643257">7.1.2 Maturity Levels</a></li>
+          <li><a href="#recs-and-notes">7.1.1 Recommendations and Notes</a></li>
+          <li><a href="#maturity-levels">7.1.2 Maturity Levels</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId674003">7.2 General requirements and definitions</a>
+      <li><a href="#requirements-and-definitions">7.2 General requirements and
+          definitions</a>
         <ul>
-          <li><a href="#mozTocId840436">7.2.1 General requirements for Technical
-              Reports</a></li>
-          <li><a href="#mozTocId650463">7.2.2 Advancement on the Recommendation
+          <li><a href="#general-requirements">7.2.1 General requirements for
+              Technical Reports</a></li>
+          <li><a href="#transition-reqs">7.2.2 Advancement on the Recommendation
               Track</a>
             <ul>
-              <li><a href="#mozTocId787038">7.2.2.1 Substantive Change</a></li>
+              <li><a href="#substantive-change">7.2.2.1 Substantive Change</a></li>
             </ul>
           </li>
-          <li><a href="#mozTocId891540">7.2.3 Reviews and Review
-              Responsibilities</a>
+          <li><a href="#doc-reviews">7.2.3 Reviews and Review Responsibilities</a>
             <ul>
-              <li><a href="#mozTocId712209">7.2.3.1 Wide Review</a></li>
+              <li><a href="#wide-review">7.2.3.1 Wide Review</a></li>
             </ul>
           </li>
-          <li><a href="#mozTocId677214">7.2.4 Implementation Experience</a></li>
+          <li><a href="#implementation-experience">7.2.4 Implementation
+              Experience</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId124435">7.3 Working Draft</a>
+      <li><a href="#working-draft">7.3 Working Draft</a>
         <ul>
-          <li><a href="#mozTocId531921">7.3.1 First Public Working Draft</a></li>
-          <li><a href="#mozTocId557161">7.3.2 Revised Public Working Drafts</a></li>
+          <li><a href="#first-wd">7.3.1 First Public Working Draft</a></li>
+          <li><a href="#revised-wd">7.3.2 Revised Public Working Drafts</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId603428">7.4 Candidate Recommendation</a>
+      <li><a href="#candidate-rec">7.4 Candidate Recommendation</a>
         <ul>
-          <li><a href="#mozTocId884719">7.4.1 Revised Candidate Recommendation</a></li>
+          <li><a href="#revised-cr">7.4.1 Revised Candidate Recommendation</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId388392">7.5 W3C Recommendation</a>
+      <li><a href="#rec-publication">7.5 W3C Recommendation</a>
         <ul>
-          <li><a href="#mozTocId753802">7.5.1 For all W3C Recommendations</a></li>
-          <li><a href="#mozTocId368357">7.5.2 Publishing a Candidate
+          <li><a href="#for-all-recs">7.5.1 For all W3C Recommendations</a></li>
+          <li><a href="#lcrec-publication">7.5.2 Publishing a Candidate
               Recommendation as a W3C Recommendation</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId66258">7.6 Modifying a W3C Recommendation</a>
+      <li><a href="#rec-modify">7.6 Modifying a W3C Recommendation</a>
         <ul>
-          <li><a href="#mozTocId861101">7.6.1 Errata Management</a></li>
-          <li><a href="#mozTocId582942">7.6.2 Classes of Changes to a
+          <li><a href="#errata">7.6.1 Errata Management</a></li>
+          <li><a href="#correction-classes">7.6.2 Classes of Changes to a
               Recommendation</a></li>
-          <li><a href="#mozTocId478895">7.6.3 Revised Recommendation</a></li>
+          <li><a href="#revised-rec">7.6.3 Revising a Recommendation</a></li>
         </ul>
       </li>
-      <li><a href="#mozTocId663232">7.7 Publishing a Working Group or Interest
-          Group Note</a></li>
-      <li><a href="#mozTocId592607">7.8 Rescinding a W3C Recommendation</a></li>
+      <li><a href="#tr-end">7.7 Publishing a Working Group or Interest Group
+          Note</a></li>
+      <li><a href="#good-practice">7.8 Rescinding a W3C Recommendation</a></li>
       <li><a href="#mozTocId806006">Further reading</a></li>
     </ul>
-    <h3>7.1 <a name="rec-advance" id="rec-advance">W3C Technical Reports</a></h3>
-    <h4>7.1.1 Recommendations and Notes</h4>
+    <h3 id="rec-advance">7.1 W3C Technical Reports</h3>
+    <h4 id="recs-and-notes">7.1.1 Recommendations and Notes</h4>
     <p>W3C follows these steps when advancing a technical report to
       Recommendation.</p>
     <ol>
@@ -267,9 +263,9 @@
       specification is returned to a Working Group for further work.</p>
     <p class="issue">Add a short explanation of Note track, and how documents
       can go from Rec-track to Note and back, to this section. <a href="http://www.w3.org/community/w3process/track/issues/59">ISSUE-59</a></p>
-    <h4>7.1.2 <a name="maturity-levels" id="maturity-levels">Maturity Levels</a></h4>
+    <h4 id="maturity-levels">7.1.2 Maturity Levels</h4>
     <dl>
-      <dt><a name="RecsWD" id="RecsWD">Working Draft (WD)</a></dt>
+      <dt id="RecsWD">Working Draft (WD)</dt>
       <dd>A Working Draft is a document that W3C has published for review by the
         community, including W3C Members, the public, and other technical
         organizations. Some, but not all, Working Drafts are meant to advance to
@@ -280,7 +276,7 @@
         Working Drafts do not necessarily represent a consensus of the Working
         Group, and do not imply any endorsement by W3C or its members beyond
         agreement to work on a general area of technology.</dd>
-      <dt><a name="RecsCR" id="RecsCR">Candidate Recommendation (CR)</a></dt>
+      <dt id="RecsCR">Candidate Recommendation (CR)</dt>
       <dd class="changed">A Candidate Recommendation is a document that
         Satisfies the Working Group's technical requirements, and has already
         received wide review. W3C publishes a Candidate Recommendation to
@@ -301,13 +297,12 @@
         accepted as Recommendations. Announcement of a different next step <em
           class="rfc2119">should</em> include the reasons why the change in
         expectations comes at so late a stage.</dd>
-      <dt><a name="RecsW3C" id="RecsW3C">W3C Recommendation (REC)</a></dt>
+      <dt id="RecsW3C">W3C Recommendation (REC)</dt>
       <dd>A W3C Recommendation is a specification or set of guidelines or
         requirements that, after extensive consensus-building, has received the
         endorsement of W3C Members and the Director. W3C recommends the wide
         deployment of its Recommendations as standards for the Web.</dd>
-      <dt><a name="WGNote" id="WGNote">Working Group Note, Interest Group Note
-          (NOTE) </a></dt>
+      <dt id="WGNote">Working Group Note, Interest Group Note (NOTE) </dt>
       <dd>A Working Group Note or Interest Group Note is published by a
         chartered Working Group or Interest Group to provide a stable reference
         for a document that is not intended to be a specification requiring
@@ -318,7 +313,7 @@
         also publish a specification as a Note if they stop work without
         producing a Recommendation. A Working Group or Interest Group <em class="rfc2119">may</em>
         publish a Note with or without its prior publication as a Working Draft.</dd>
-      <dt><a name="RescindedRec" id="RescindedRec">Rescinded Recommendation</a></dt>
+      <dt id="RescindedRec">Rescinded Recommendation</dt>
       <dd>A Rescinded Recommendation is an entire Recommendation that W3C no
         longer endorses. See also clause 10 of the licensing requirements for
         W3C Recommendations in <a href="http://www.w3.org/Consortium/Patent-Policy#sec-Requirements">section
@@ -331,7 +326,8 @@
       their contents endorsed in any way by W3C or its members, except to the
       extent that such contents happen to be consistent with some other document
       which carries a higher level of endorsement.</p>
-    <h3>7.2 General requirements and definitions</h3>
+    <h3 id="requirements-and-definitions">7.2 General requirements and
+      definitions</h3>
     <h4 id="general-requirements">7.2.1 General requirements for Technical
       Reports</h4>
     <p>Every document published as part of the technical report development
@@ -378,8 +374,7 @@
       the translation of its Technical Reports. <a href="http://www.w3.org/Consortium/Translation/">Information
         about translations of W3C technical reports</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-translations">PUB18</a>]
       is available at the W3C Web site.</p>
-    <h4>7.2.2 <a name="transition-reqs" id="transition-reqs">Advancement on the
-        Recommendation Track</a></h4>
+    <h4 id="transition-reqs">7.2.2 Advancement on the Recommendation Track</h4>
     <p>For <em>all</em> requests to advance a specification to a new maturity
       level other than Note the Working Group:</p>
     <ul>
@@ -415,8 +410,7 @@
       change would invalidate an individual's review or implementation
       experience. Other changes (e.g., clarifications, bug fixes, editorial
       repairs, and minor error corrections) are minor changes.</p>
-    <h4>7.2.3 <a name="doc-reviews" id="doc-reviews">Reviews and Review
-        Responsibilities</a></h4>
+    <h4 id="doc-reviews">7.2.3 Reviews and Review Responsibilities</h4>
     <p>A document is available for review from the moment it is first published.
       Working Groups <em class="rfc2119">should</em> <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#formal-address">formally
         address</a> <em>any</em> substantive review comment about a technical
@@ -477,10 +471,9 @@
       implementations early in the development process; for example, they may
       wish to develop tests in concert with implementation efforts.</p>
     <h3 id="working-draft">7.3 Working Draft</h3>
-    <h4>7.3.1 <a name="first-wd" id="first-wd">First Public Working Draft</a></h4>
-    <p>To publish the First Public Working Draft of a document, in addition to
-      meeting the <a href="#transition-reqs">general requirements for
-        advancement</a> a Working Group</p>
+    <p>A Public Working Draft is published on the W3C's Technical Reports page
+      [TR] for review, and for simple historical reference. For all Public
+      Working Drafts a Working Group</p>
     <ul>
       <li> <em class="rfc2119">should</em> document outstanding issues, and
         parts of the document on which the Working Group does not have
@@ -489,6 +482,10 @@
         even if its content is considered unstable and does not meet all Working
         Group requirements.</li>
     </ul>
+    <h4 id="first-wd">7.3.1 First Public Working Draft</h4>
+    <p>To publish the First Public Working Draft of a document, a Working Group
+      must meet the <a href="#transition-reqs">general requirements for
+        advancement</a>.</p>
     <p>The Director <em class="rfc2119">must</em> announce the publication of a
       First Public Working Draft publication to other W3C groups and to the
       public. </p>
@@ -519,11 +516,6 @@
         step,</li>
       <li><em class="rfc2119">should</em> report any changes in dependencies
         with other groups,</li>
-      <li><em class="rfc2119">should</em> document outstanding issues and parts
-        of the document on which the Working Group does not have consensus, and</li>
-      <li><em class="rfc2119">may</em> request publication of a Working Draft
-        even if its content is considered unstable and does not meet all Working
-        Group requirements.</li>
     </ul>
     <p>Possible next steps:</p>
     <ul>
@@ -531,7 +523,8 @@
       <li><a href="#last-call">Candidate recommendation</a>.</li>
       <li><a href="#tr-end">Working Group Note</a></li>
     </ul>
-    <h3>7.4 <a name="last-call" id="last-call">Candidate Recommendation </a></h3>
+    <h3 id="candidate-rec"><a name="last-call" id="last-call">7.4 Candidate
+        Recommendation </a></h3>
     <p>To publish a Candidate recommendation, in addition to meeting the <a href="#transition-reqs">general
         requirements for advancement</a> a Working Group</p>
     <ul>
@@ -543,8 +536,9 @@
       <li><em class="rfc2119">must</em> document how adequate <a href="#implementation-experience">
           implementation experience</a> will be demonstrated,</li>
       <li><em class="rfc2119">must</em> specify the deadline for comments, which
-        <em class="rfc2119">must</em> be at least four weeks after publication,
-        and <em class="rfc2119">should</em> be longer for complex documents,</li>
+        <em class="rfc2119">must</em> be <strong>at least</strong> four weeks
+        after publication, and <em class="rfc2119">should</em> be longer for
+        complex documents,</li>
       <li>If the document has previously been published as a Candidate
         Recommendation, <em class="rfc2119">must</em> document the changes
         since the previous Candidate Recommendation, </li>
@@ -582,20 +576,23 @@
     <p> <a href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
         Committee</a> representatives <em class="rfc2119">may</em> <a href="http://www.w3.org/2005/10/Process-20051014/acreview.html#ACAppeal">appeal</a>
       the decision to advance the technical report.</p>
-    <h4>7.4.1 Revised Candidate Recommendation</h4>
-    <h3>7.5 <a name="rec-publication" id="rec-publication">W3C Recommendation</a></h3>
+    <h4 id="revised-cr">7.4.1 Revised Candidate Recommendation</h4>
+    <h3 id="rec-publication">7.5 W3C Recommendation</h3>
+    <p class="issue">A better explanation of how a document becomes a
+      Recommendation is needed here.</p>
     <h4 id="for-all-recs"><a id="rec-requirements">7.5.1 For <strong>all</strong>
         W3C Recommendations</a></h4>
-    <p id="for-all-recs">In addition to meeting the <a href="#transition-reqs">general
+    <p>In addition to meeting the <a href="#transition-reqs">general
         requirements for advancement</a>,</p>
     <ul>
       <li>The Director <em class="rfc2119">must</em> announce the provisional
         approval of a Request for publication of a W3C Recommendation to the <a
           href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
           Committee</a>,</li>
-      <li>The Advisory Committee review of the technical report <em class="rfc2119">must</em>
-        continue at least 28 days after the announcement of provisional approval
-        to publish the Edited Recommendation as a W3C Recommendation,</li>
+      <li>The deadline for Advisory Committee review of the technical report <em
+          class="rfc2119">must</em> be <strong>at least</strong> 28 days after
+        the announcement of provisional approval to publish the Edited
+        Recommendation as a W3C Recommendation,</li>
       <li>If there was any <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#def-Dissent"
           rel="glossary" title="Definition of Dissent"><span class="dfn-instance">dissent</span></a>
         in Advisory Committee reviews, the Director <em class="rfc2119">must</em>
@@ -611,8 +608,8 @@
         whether it is provisionally approved, or published as a W3C
         Recommendation.</li>
     </ul>
-    <h4><a name="lcrec-publication" id="lcrec-publication">7.5.2 Publishing a
-        Candidate Recommendation as a W3C Recommendation</a></h4>
+    <h4 id="lcrec-publication">7.5.2 Publishing a Candidate Recommendation as a
+      W3C Recommendation</h4>
     <p>To publish a Candidate Recommendation as a W3C Recommendation, a Working
       Group</p>
     <ul>
@@ -656,10 +653,10 @@
           an Edited Recommendation</a>, or</li>
       <li><em class="rfc2119">may</em> be <a href="#rec-rescind">rescinded</a>.</li>
     </ul>
-    <h3>7.6 <a name="rec-modify" id="rec-modify">Modifying a W3C Recommendation</a></h3>
+    <h3 id="rec-modify">7.6 Modifying a W3C Recommendation</h3>
     <p>The following sections discuss the management of errors and the process
       for making changes to a Recommendation.</p>
-    <h4>7.6.1 <a name="errata" id="errata">Errata Management</a></h4>
+    <h4 id="errata">7.6.1 Errata Management</h4>
     <p>Tracking errors is an important part of a Working Group's ongoing care of
       a Recommendation; for this reason, the scope of a Working Group charter
       generally allows time for work after publication of a Recommendation. In
@@ -685,8 +682,7 @@
       changes to interested parties, notably when corrections are proposed or
       incorporated into an Edited Recommendation, according to the Team's
       requirements.</p>
-    <h4>7.6.2 <a name="correction-classes" id="correction-classes">Classes of
-        Changes to a Recommendation</a></h4>
+    <h4 id="correction-classes">7.6.2 Classes of Changes to a Recommendation</h4>
     <p>This document distinguishes the following classes of changes to a
       Recommendation.</p>
     <dl>
@@ -723,7 +719,7 @@
     <p>For the fourth class of change, which introduces a new feature or
       features, W3C <span class="rfc2119">must</span> follow the full process
       of <a href="#rec-advance">advancing a technical report to Recommendation</a>.</p>
-    <h4>7.6.3 Revised Recommendation</h4>
+    <h4 id="revised-rec">7.6.3 Revising a Recommendation</h4>
     <p>To publish an Edited Recommendation as a W3C Recommendation, in addition
       to meeting the <a href="#rec-requirements">requirements for all W3C
         Recommendations</a>, a Working Group</p>
@@ -734,8 +730,7 @@
           href="#wide-review">wide review</a>, and </li>
       <li><em class="rfc2119">should</em> address all errata.</li>
     </ul>
-    <h3>7.7 <a name="tr-end" id="tr-end">Publishing a Working Group or Interest
-        Group Note</a></h3>
+    <h3 id="tr-end">7.7 Publishing a Working Group or Interest Group Note</h3>
     <p>Working Groups and Interest Groups publish material that is not a formal
       specification as Notes. This may include supporting documentation for a
       specification, such as requirements, use cases, good practices and the
@@ -753,7 +748,7 @@
     <p>In order to publish a Note a Working Group or Interest Group: </p>
     <ul>
       <li><em class="rfc2119">must</em> record the group's decision to request
-        advancement, and</li>
+        publication as a Note, and</li>
       <li><em class="rfc2119">should</em> public documentation of significant
         changes to the technical report since the previous publication.</li>
     </ul>
@@ -765,12 +760,11 @@
         technical report at any time, at the maturity level the specification
         had before publication as a Note</li>
     </ul>
-    <p>The W3C Patent Policy does not specify any licensing requirements or
-      commitments for Working Group Notes, only for W3C Recommendations. See
-      also the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C Patent
-        Policy</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-patentpolicy">PUB33</a>].</p>
-    <h3>7.8 <a name="rec-rescind" id="rec-rescind">Rescinding a W3C
-        Recommendation</a></h3>
+    <p>The <a href="http://www.w3.org/Consortium/Patent-Policy">W3C Patent
+        Policy</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-patentpolicy">PUB33</a>]
+      does not specify any licensing requirements or commitments for Working
+      Group Notes, only for W3C Recommendations.</p>
+    <h3 id="rec-rescind">7.8 &gt;Rescinding a W3C Recommendation</h3>
     <p>W3C <em class="rfc2119">may</em> rescind a Recommendation, for example
       if the Recommendation contains many errors that conflict with a later
       version or if W3C discovers burdensome patent claims that affect
@@ -782,8 +776,9 @@
       Director to rescind a Recommendation which was a deliverable, or the
       Director <em class="rfc2119">may</em> directly propose to rescind a
       Recommendation. </p>
-    <p>To deprecate <em>part</em> of a Recommendation, W3C follows the process
-      for <a href="#rec-modify">modifying a Recommendation</a>.</p>
+    <p>W3C only rescinds entire specifications. To rescind some <em>part</em>
+      of a Recommendation, W3C follows the process for <a href="#rec-modify">modifying
+        a Recommendation</a>.</p>
     <p>Once W3C has published a Rescinded Recommendation, future W3C technical
       reports <em class="rfc2119">must not</em> include normative references to
       that technical report.</p>
@@ -794,7 +789,7 @@
         Recommendation.</li>
       <li><em class="rfc2119">should</em> document known implementation.</li>
     </ul>
-    <p>In addition a Working Group proposing to rescind</p>
+    <p>In addition a Working Group requesting to rescind</p>
     <ul>
       <li><em class="rfc2119">must</em> show that the request to rescind has
         received <a href="#wide-review">wide review</a></li>
@@ -813,7 +808,8 @@
     <ul>
       <li>indicate that this is a Proposal to Rescind a Recommendation</li>
       <li>specify the deadline for review comments, which <em class="rfc2119">must</em>
-        be at least <span class="time-interval">four weeks after publication </span></li>
+        be at least <span class="time-interval">four weeks after announcing</span>
+        the proposal to rescind.</li>
       <li>identify known dependencies and solicit review from all dependent
         Working Groups;</li>
       <li>solicit public review.</li>
