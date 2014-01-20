@@ -78,8 +78,8 @@
           Chris Lilley, Ralph Swick, Anne van Kesteren, Steve Zilles, and many
           people I have forgotten to acknowledge for suggestions, comments and
           discussions that helped me sort out my thinking, and to Ora Lassila
-          for the original version of the image that illustrates the normal progress
-          of a W3C Recommendation-track document. </p>
+          for the original version of the image that illustrates the normal
+          progress of a W3C Recommendation-track document. </p>
         <p>Please send comments on this document to, or participate in, the <a
             href="http://www.w3.org/community/w3process/">W3C Process Community
             Group</a>. Issues related to this proposal are recorded in that
@@ -202,8 +202,8 @@
       suggests the work has been completed and the document is good enough to
       become a new standard, there will then be a Candidate Recommendation phase
       allowing review by the W3C membership and to formally collect
-      implementation experience to ensure it works in practice, followed by Publication
-      as a Recommendation.</p>
+      implementation experience to ensure it works in practice, followed by
+      Publication as a Recommendation.</p>
     <p>Groups may also publish documents as W3C Notes. The two common purposes
       for Notes are </p>
     <ol>
@@ -426,14 +426,6 @@
       been met before Director's approval is given.</p>
     <p>Note that for a First Public Working Draft there is no "previous maturity
       level".</p>
-    <h5 id="substantive-change">7.2.2.1 Substantive Change</h5>
-    <p class="issue">This subsection will probably get merged into the later
-      section on changes, as per <a href="http://www.w3.org/community/w3process/track/issues/72">ISSUE-72</a></p>
-    <p> A <dfn>substantive change</dfn> (whether deletion, inclusion, or other
-      modification) is one where someone could reasonably expect that making the
-      change would invalidate an individual's review or implementation
-      experience. Other changes (e.g., clarifications, bug fixes, editorial
-      repairs, and minor error corrections) are minor changes.</p>
     <h4 id="doc-reviews">7.2.3 Reviews and Review Responsibilities</h4>
     <p>A document is available for review from the moment it is first published.
       Working Groups <em class="rfc2119">should</em> <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#formal-address">formally
@@ -710,9 +702,11 @@
       changes to interested parties, notably when corrections are proposed or
       incorporated into an Edited Recommendation, according to the Team's
       requirements.</p>
-    <h4 id="correction-classes">7.6.2 Classes of Changes to a Recommendation</h4>
-    <p>This document distinguishes the following classes of changes to a
-      Recommendation.</p>
+    <h4 id="correction-classes">7.6.2 Classes of Changes</h4>
+    <p>This document distinguishes the following 4 classes of changes to a
+      specification. The first two classes of change are considered <dfn id="editorial-change">editorial
+        changes</dfn>, the latter two <dfn id="substantive-change">substantive
+        changes</dfn>.</p>
     <dl>
       <dt>1. No changes to text content</dt>
       <dd>These changes include fixing broken links, style sheets or invalid
@@ -722,7 +716,7 @@
         content of the specification.</dd>
       <dt>3. Corrections that do not add new features</dt>
       <dd>These changes <span class="rfc2119">may</span> affect conformance to
-        the Recommendation. A change that affects conformance is one that:
+        the specification. A change that affects conformance is one that:
         <ul>
           <li>turns conforming data, processors, or other conforming agents into
             non-conforming agents, or</li>
@@ -734,7 +728,8 @@
       </dd>
       <dt>4. New features</dt>
     </dl>
-    <p>The first two classes of change require no technical review of the
+    <h4 id="revised-rec">7.6.3 Revising a Recommendation</h4>
+    <p>Editorial changes to a Recommendation require no technical review of the
       proposed changes. A Working Group <span class="rfc2119">may</span>
       request republication of a Recommendation for these classes of change, or
       W3C <span class="rfc2119">may</span> republish a Recommendation with this
@@ -742,12 +737,9 @@
       Team's requirements, including <a href="http://www.w3.org/Guide/pubrules">Publication
         Rules</a> [<a href="refs.html#ref-pubrules">PUB31</a>] and the <a href="http://www.w3.org/2003/01/republishing/">Requirements
         for modification of W3C Technical Reports</a> [PUB@@].</p>
-    <p>For the third class of change, a Working Group <span class="rfc2119">must</span>
-      request publication of an <a href="#rec-edited">Edited Recommendation</a>.</p>
-    <p>For the fourth class of change, which introduces a new feature or
-      features, W3C <span class="rfc2119">must</span> follow the full process
-      of <a href="#rec-advance">advancing a technical report to Recommendation</a>.</p>
-    <h4 id="revised-rec">7.6.3 Revising a Recommendation</h4>
+    <p>For substantive changes that do not add new features, a Working Group <span
+        class="rfc2119">must</span> request publication of an <a href="#rec-edited">Edited
+        Recommendation</a>.</p>
     <p>To publish an Edited Recommendation as a W3C Recommendation, in addition
       to meeting the <a href="#rec-requirements">requirements for all W3C
         Recommendations</a>, a Working Group</p>
@@ -758,6 +750,9 @@
           href="#wide-review">wide review</a>, and </li>
       <li><em class="rfc2119">should</em> address all errata.</li>
     </ul>
+    <p>For changes which introduces a new feature or features, W3C <span class="rfc2119">must</span>
+      follow the full process of <a href="#rec-advance">advancing a technical
+        report to Recommendation</a>.</p>
     <h3 id="tr-end">7.7 Publishing a Working Group or Interest Group Note</h3>
     <p>Working Groups and Interest Groups publish material that is not a formal
       specification as Notes. This may include supporting documentation for a
