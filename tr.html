@@ -169,7 +169,9 @@
             </ul>
           </li>
           <li><a href="#implementation-experience">7.2.4 Implementation
-              Experience</a></li>
+              Experience</a> </li>
+          <li><a href="#correction-classes">7.2.5 Classes of Changes to a
+              Recommendation</a></li>
         </ul>
       </li>
       <li><a href="#working-draft">7.3 Working Draft</a>
@@ -195,9 +197,7 @@
       <li><a href="#rec-modify">7.6 Modifying a W3C Recommendation</a>
         <ul>
           <li><a href="#errata">7.6.1 Errata Management</a></li>
-          <li><a href="#correction-classes">7.6.2 Classes of Changes to a
-              Recommendation</a></li>
-          <li><a href="#revised-rec">7.6.3 Revising a Recommendation</a></li>
+          <li><a href="#revised-rec">7.6.2 Revising a Recommendation</a></li>
         </ul>
       </li>
       <li><a href="#Note">7.7 Publishing a Working Group or Interest Group Note</a></li>
@@ -496,6 +496,32 @@
       more effectively if they plan how they will demonstrate interoperable
       implementations early in the development process; for example, they may
       wish to develop tests in concert with implementation efforts.</p>
+    <h4 id="correction-classes">7.2.5 Classes of Changes</h4>
+    <p>This document distinguishes the following 4 classes of changes to a
+      specification. The first two classes of change are considered <dfn id="editorial-change">editorial
+        changes</dfn>, the latter two <dfn id="substantive-change">substantive
+        changes</dfn>.</p>
+    <dl>
+      <dt>1. No changes to text content</dt>
+      <dd>These changes include fixing broken links, style sheets or invalid
+        markup.</dd>
+      <dt>2. Corrections that do not affect conformance</dt>
+      <dd>Editorial changes or clarifications that do not change the technical
+        content of the specification.</dd>
+      <dt>3. Corrections that do not add new features</dt>
+      <dd>These changes <span class="rfc2119">may</span> affect conformance to
+        the specification. A change that affects conformance is one that:
+        <ul>
+          <li>turns conforming data, processors, or other conforming agents into
+            non-conforming agents, or</li>
+          <li>turns non-conforming agents into conforming ones, or</li>
+          <li>clears up an ambiguity or under-specified part of the
+            specification in such a way that an agent whose conformance was once
+            unclear becomes clearly conforming or non-conforming.</li>
+        </ul>
+      </dd>
+      <dt>4. New features</dt>
+    </dl>
     <h3 id="working-draft">7.3 Working Draft</h3>
     <p>A Public Working Draft is published on the W3C's Technical Reports page
       [TR] for review, and for simple historical reference. For all Public
@@ -718,33 +744,7 @@
       changes to interested parties, notably when corrections are proposed or
       incorporated into an Edited Recommendation, according to the Team's
       requirements.</p>
-    <h4 id="correction-classes">7.6.2 Classes of Changes</h4>
-    <p>This document distinguishes the following 4 classes of changes to a
-      specification. The first two classes of change are considered <dfn id="editorial-change">editorial
-        changes</dfn>, the latter two <dfn id="substantive-change">substantive
-        changes</dfn>.</p>
-    <dl>
-      <dt>1. No changes to text content</dt>
-      <dd>These changes include fixing broken links, style sheets or invalid
-        markup.</dd>
-      <dt>2. Corrections that do not affect conformance</dt>
-      <dd>Editorial changes or clarifications that do not change the technical
-        content of the specification.</dd>
-      <dt>3. Corrections that do not add new features</dt>
-      <dd>These changes <span class="rfc2119">may</span> affect conformance to
-        the specification. A change that affects conformance is one that:
-        <ul>
-          <li>turns conforming data, processors, or other conforming agents into
-            non-conforming agents, or</li>
-          <li>turns non-conforming agents into conforming ones, or</li>
-          <li>clears up an ambiguity or under-specified part of the
-            specification in such a way that an agent whose conformance was once
-            unclear becomes clearly conforming or non-conforming.</li>
-        </ul>
-      </dd>
-      <dt>4. New features</dt>
-    </dl>
-    <h4 id="revised-rec">7.6.3 Revising a Recommendation</h4>
+    <h4 id="revised-rec">7.6.2 Revising a Recommendation</h4>
     <p>Editorial changes to a Recommendation require no technical review of the
       proposed changes. A Working Group <span class="rfc2119">may</span>
       request republication of a Recommendation for these classes of change, or
