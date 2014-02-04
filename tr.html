@@ -52,10 +52,10 @@
         <p>This is an intermediate revised draft proposal to replace the <a href="http://www.w3.org/2005/10/Process-20051014/tr.html">current
             chapter 7 of the W3C process document</a> with a more effective W3C
           Specification life cycle following the meeting of the W3C Advisory
-          Board's Chapter 7 Task Force on 3 February 2014. This document is an
-          editor's draft for resolution of comments received.</p>
-        <p>In this draft, there are some pointers and placeholders for changes
-          expected in response to open issues, most particularly <a href="http://www.w3.org/community/w3process/track/issues/77">ISSUE-77</a>.</p>
+          Board's Chapter 7 Task Force on 3 February 2014. As foreshadowed at
+          that meeting and in email to the W3Process Community Group, this draft
+          re-establishes a Proposed Recommendation phase, and clarifies the
+          requirements for revising a Candidate Recommendation.</p>
         <p>This introductory session (before the chapter title below) will be
           removed when this chapter is re-incorporated into the full process
           document, as per issues 60-64.</p>
@@ -193,14 +193,15 @@
               Recommendation as a W3C Recommendation</a></li>
         </ul>
       </li>
-      <li><a href="#rec-modify">7.6 Modifying a W3C Recommendation</a>
+      <li> <a href="#rec-pr">7.6 Proposed Recommendation</a></li>
+      <li><a href="#rec-modify">7.7 Modifying a W3C Recommendation</a>
         <ul>
-          <li><a href="#errata">7.6.1 Errata Management</a></li>
-          <li><a href="#revised-rec">7.6.2 Revising a Recommendation</a></li>
+          <li><a href="#errata">7.7.1 Errata Management</a></li>
+          <li><a href="#revised-rec">7.7.2 Revising a Recommendation</a></li>
         </ul>
       </li>
-      <li><a href="#Note">7.7 Publishing a Working Group or Interest Group Note</a></li>
-      <li><a href="#good-practice">7.8 Rescinding a W3C Recommendation</a></li>
+      <li><a href="#Note">7.8 Publishing a Working Group or Interest Group Note</a></li>
+      <li><a href="#good-practice">7.9 Rescinding a W3C Recommendation</a></li>
       <li><a href="#mozTocId806006">Further reading</a></li>
     </ul>
     <h3 id="rec-advance">7.1 W3C Technical Reports</h3>
@@ -246,7 +247,7 @@
     </ol>
     <p>
       <svg xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0.00 0.00 400.00 62.00" height="5em" width="36em">
+        viewBox="0.00 0.00 450.00 62.00" height="5em" width="45em">
         <g transform="scale(1 1) rotate(0) translate(4 58)" class="graph" id="graph0">
           <g class="node" id="wd">
             <ellipse ry="18" rx="38.1938" cy="-18" cx="147" stroke="black" fill="none"></ellipse>
@@ -273,7 +274,7 @@
               stroke="black" fill="black"></polygon> </g>
           <g class="edge" id="edge4">
             <path d="M242.388,-33.916C237.793,-44.1504 243.664,-54 260,-54 270.72,-54 276.934,-49.7581 278.64,-43.9494"
-              stroke="black" fill="none"></path>
+              stroke="black" fill="none" stroke-dasharray="5 3"></path>
             <polygon points="282.114,-43.5071 277.612,-33.916 275.15,-44.2208 282.114,-43.5071"
               stroke="black" fill="black"></polygon> </g>
           <g class="edge" id="edge5">
@@ -282,11 +283,19 @@
               stroke="black" fill="black"></polygon> </g>
           <g class="node" id="node4">
             <ellipse ry="18" rx="28.6953" cy="-18" cx="363" stroke="black" fill="none"></ellipse>
-            <a xlink:href="#RecsW3C"><text font-size="14.00" font-family="Times,serif"
-                y="-14.3" x="363" text-anchor="middle">REC</text></a> </g>
+            <a xlink:href="#RecsPR"><text font-size="14.00" font-family="Times,serif"
+                y="-14.3" x="363" text-anchor="middle">PR</text></a> </g>
           <g class="edge" id="edge6">
             <path d="M297.75,-18h26.5" stroke="black" fill="none"></path>
             <polygon points="324.306,-21.5001 334.306,-18 324.306,-14.5001 324.306,-21.5001"
+              stroke="black" fill="black"></polygon> </g>
+          <g class="node" id="node5">
+            <ellipse ry="18" rx="28.6953" cy="-18" cx="443" stroke="black" fill="none"></ellipse>
+            <a xlink:href="#RecsW3C"><text font-size="14.00" font-family="Times,serif"
+                y="-14.3" x="443" text-anchor="middle">REC</text></a> </g>
+          <g class="edge" id="edge7">
+            <path d="M391.75,-18h20.5" stroke="black" fill="none"></path>
+            <polygon points="404.306,-21.5 414.306,-18 404.306,-14.5 404.306,-21.5"
               stroke="black" fill="black"></polygon> </g> </g> </svg> </p>
     <p>W3C <em class="rfc2119">may</em> <a href="#tr-end">end work on a
         technical report</a> at any time.</p>
@@ -332,6 +341,13 @@
         accepted as Recommendations. Announcement of a different next step <em
           class="rfc2119">should</em> include the reasons why the change in
         expectations comes at so late a stage.</dd>
+      <dt>Proposed Recommendation</dt>
+      <dd>A Proposed Recommendation is a document that has been accepted by the
+        W3C Director as of sufficient quality to become a W3C Recommendation.
+        This phase establishes a deadline for the Advisory Committee review
+        which begins with Candidate Recommendation. Substantive changes <span class="rfc2119">must</span>
+        not be made to a Proposed Recommendation except by publishing a new
+        Candidate Recommendation.</dd>
       <dt id="RecsW3C">W3C Recommendation (REC)</dt>
       <dd>A W3C Recommendation is a specification or set of guidelines or
         requirements that, after extensive consensus-building, has received the
@@ -645,10 +661,57 @@
         Committee</a> representatives <em class="rfc2119">may</em> <a href="http://www.w3.org/2005/10/Process-20051014/acreview.html#ACAppeal">appeal</a>
       the decision to advance the technical report.</p>
     <h4 id="revised-cr">7.4.1 Revised Candidate Recommendation</h4>
-    <h3 id="rec-publication">7.5 W3C Recommendation</h3>
-    <p class="issue">A better explanation of how a document goes from Candidate
-      Recommencation to Recommendation is needed here. <a href="http://www.w3.org/community/w3process/track/issues/77">ISSUE-77</a></p>
-    <h4 id="for-all-recs"><a id="rec-requirements">7.5.1 For <strong>all</strong>
+    <h3 id="rec-pr">7.5 Proposed Recommendation</h3>
+    <p>In addition to meeting the <a href="#transition-reqs">general
+        requirements for advancement</a>,</p>
+    <ul>
+      <li>The Director <em class="rfc2119">must</em> announce the Request for
+        publication of a Proposed Recommendation to the <a href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
+          Committee</a>, and</li>
+      <li>The deadline for Advisory Committee review of the technical report <em
+          class="rfc2119">must</em> be <strong>at least</strong> 28 days after
+        the publication of the Proposed Recommendation.</li>
+    </ul>
+    <p>a Working Group</p>
+    <ul>
+      <li><em class="rfc2119">must</em> republish the document, identifying it
+        as the basis of a Request for Recommendation,</li>
+      <li><em class="rfc2119">must</em> show adequate <a href="#implementation-experience">implementation
+          experience</a> except where an exception is approved by the Director,</li>
+      <li><em class="rfc2119">must</em> show that the document has received <a
+          href="#wide-review">wide review,</a></li>
+      <li><em class="rfc2119">must</em> show that all issues raised during the
+        Candidate Recommendation review period other than by Advisory Committee
+        representatives have been <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#formal-address">formally
+          addressed</a>,</li>
+      <li><em class="rfc2119">must </em>identify any substantive issues raised
+        since the close of the Candidate Recommendation review period by parties
+        other than Advisory Committee representatives,</li>
+      <li><em class="rfc2119">must</em> identify where errata are tracked, and</li>
+      <li><em class="rfc2119">may</em> remove features identified in the
+        Candidate Recommendation document as "at risk" without repeating the
+        transition to Candidate Recommendation.</li>
+    </ul>
+    <p>The Director</p>
+    <ul>
+      <li><em class="rfc2119">must</em> announce the Request for publication of
+        a Proposed Recommendation to the <a href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
+          Committee</a>, and</li>
+      <li>The deadline for Advisory Committee review of the technical report <em
+          class="rfc2119">must</em> be <strong>at least</strong> 28 days after
+        the publication of the Proposed Recommendation.</li>
+      <li> <span><em class="rfc2119">should not</em>&nbsp; approve a Request
+          for publication of a Proposed Recommendation less than 35 days after
+          the publication of the Candidate Recommendation on which is it based
+          [editor's note - this is to allow for the patent policy exclusion
+          period to expire], and </span></li>
+      <li><span><em class="rfc2119">may</em>&nbsp; approve a Proposed
+          Recommendation with minimal implementation experience where there is a
+          compelling reason to do so. In such a case, the Director <em class="rfc2119">should</em>
+          explain the reasons for that decision. </span></li>
+    </ul>
+    <h3 id="rec-publication">7.6 W3C Recommendation</h3>
+    <h4 id="for-all-recs"><a id="rec-requirements">7.6.1 For <strong>all</strong>
         W3C Recommendations</a></h4>
     <p>In addition to meeting the <a href="#transition-reqs">general
         requirements for advancement</a>,</p>
@@ -657,10 +720,6 @@
         approval of a Request for publication of a W3C Recommendation to the <a
           href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
           Committee</a>,</li>
-      <li>The deadline for Advisory Committee review of the technical report <em
-          class="rfc2119">must</em> be <strong>at least</strong> 28 days after
-        the announcement of provisional approval to publish the Edited
-        Recommendation as a W3C Recommendation,</li>
       <li>If there was any <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#def-Dissent"
           rel="glossary" title="Definition of Dissent"><span class="dfn-instance">dissent</span></a>
         in Advisory Committee reviews, the Director <em class="rfc2119">must</em>
@@ -671,44 +730,7 @@
           Committee</a> <em class="rfc2119">may</em> <a href="http://www.w3.org/2005/10/Process-20051014/acreview.html#ACAppeal">appeal</a>
         the decision,</li>
       <li>The Director <em class="rfc2119">must</em> announce the publication
-        of a W3C Recommendation to other W3C groups and to the public, and</li>
-      <li>The "Status of the Document" <em class="rfc2119">must</em> reflect
-        whether it is provisionally approved, or published as a W3C
-        Recommendation.</li>
-    </ul>
-    <h4 id="lcrec-publication">7.5.2 Publishing a Candidate Recommendation as a
-      W3C Recommendation</h4>
-    <p>To publish a Candidate Recommendation as a W3C Recommendation, a Working
-      Group</p>
-    <ul>
-      <li><em class="rfc2119">must</em> republish the document, identifying it
-        as the basis of a Request for Recommendation,</li>
-      <li><em class="rfc2119">must</em> show adequate <a href="#implementation-experience">implementation
-          experience</a>,</li>
-      <li><em class="rfc2119">must</em> show that the document has received <a
-          href="#wide-review">wide review,</a></li>
-      <li><em class="rfc2119">must</em> show that all issues raised during the
-        Candidate Recommendation review period have been <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#formal-address">formally
-          addressed</a>,</li>
-      <li><em class="rfc2119">must </em>identify any substantive issues raised
-        since the close of the review period by parties other than Advisory
-        Committee representatives,</li>
-      <li><em class="rfc2119">must</em> identify where errata are tracked, and</li>
-      <li><em class="rfc2119">may</em> remove features identified in the
-        Candidate Recommendation document as "at risk" without repeating the
-        transition to Candidate Recommendation.</li>
-    </ul>
-    <p>The Director</p>
-    <ul>
-      <li><span><em class="rfc2119">should not</em> provisionally approve a
-          Request for publication of a W3C Recommendation less than 35 days
-          after the publication of the Candidate Recommendation on which is it
-          based [editor's note - this is to allow for the patent policy
-          exclusion period to expire], and </span></li>
-      <li><span><em class="rfc2119">may</em> provisionally approve a
-          Recommendation with minimal implementation experience where there is a
-          compelling reason to do so. In such a case, the Director <em class="rfc2119">should</em>
-          explain the reasons for that decision. </span></li>
+        of a W3C Recommendation to other W3C groups and to the public.</li>
     </ul>
     <p>Possible next steps:</p>
     <p>A W3C Recommendation normally retains its status indefinitely. However it</p>
@@ -717,10 +739,10 @@
           an Edited Recommendation</a>, or</li>
       <li><em class="rfc2119">may</em> be <a href="#rec-rescind">rescinded</a>.</li>
     </ul>
-    <h3 id="rec-modify">7.6 Modifying a W3C Recommendation</h3>
+    <h3 id="rec-modify">7.7 Modifying a W3C Recommendation</h3>
     <p>The following sections discuss the management of errors and the process
       for making changes to a Recommendation.</p>
-    <h4 id="errata">7.6.1 Errata Management</h4>
+    <h4 id="errata">7.7.1 Errata Management</h4>
     <p>Tracking errors is an important part of a Working Group's ongoing care of
       a Recommendation; for this reason, the scope of a Working Group charter
       generally allows time for work after publication of a Recommendation. In
@@ -746,7 +768,7 @@
       changes to interested parties, notably when corrections are proposed or
       incorporated into an Edited Recommendation, according to the Team's
       requirements.</p>
-    <h4 id="revised-rec">7.6.2 Revising a Recommendation</h4>
+    <h4 id="revised-rec">7.7.2 Revising a Recommendation</h4>
     <p>Editorial changes to a Recommendation require no technical review of the
       proposed changes. A Working Group <span class="rfc2119">may</span>
       request republication of a Recommendation for these classes of change, or
@@ -771,7 +793,7 @@
     <p>For changes which introduces a new feature or features, W3C <span class="rfc2119">must</span>
       follow the full process of <a href="#rec-advance">advancing a technical
         report to Recommendation</a>.</p>
-    <h3 id="Note">7.7 Publishing a Working Group or Interest Group Note</h3>
+    <h3 id="Note">7.8 Publishing a Working Group or Interest Group Note</h3>
     <p>Working Groups and Interest Groups publish material that is not a formal
       specification as Notes. This may include supporting documentation for a
       specification, such as requirements, use cases, good practices and the
@@ -796,7 +818,7 @@
         Policy</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-patentpolicy">PUB33</a>]
       does not specify any licensing requirements or commitments for Working
       Group Notes, only for W3C Recommendations.</p>
-    <h3 id="rec-rescind">7.8 Rescinding a W3C Recommendation</h3>
+    <h3 id="rec-rescind">7.9 Rescinding a W3C Recommendation</h3>
     <p>W3C <em class="rfc2119">may</em> rescind a Recommendation, for example
       if the Recommendation contains many errors that conflict with a later
       version or if W3C discovers burdensome patent claims that affect
