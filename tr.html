@@ -121,8 +121,8 @@
           <li>The Director is required to address dissenting AC review comments
             <strong>publicly</strong>, 2 weeks <em>before</em> publication of a
             Recommendation.</li>
-          <li>Errata cannot be made normative except by republishing a
-            Recommendation or a Revised Recommendation</li>
+          <li>Errata cannot be made normative except by revising a
+            Recommendation</li>
           <li>And it is in HTML5</li>
         </ul>
         <p>Editorially, I have tried to rationalize requirements and clarify who
@@ -212,11 +212,15 @@
     <p>Typically a series of Working Drafts are published, each of which refines
       a document under development to complete the scope of work envisioned by a
       Working Group's charter. For a technical specification, once review
-      suggests the work has been completed and the document is good enough to
-      become a new standard, there will then be a Candidate Recommendation phase
-      allowing review by the W3C membership and to formally collect
-      implementation experience to ensure it works in practice, followed by
-      Publication as a Recommendation.</p>
+      suggests the Working Group has met their requirements satisfactorily for a
+      new standard, there is a Candidate Recommendation phase. This allows the
+      entire W3C membership to provide feedback on whether the specification
+      should become a W3C Recommendation, while the Working Group formally
+      collects&nbsp; implementation experience to demonstrate that the
+      specification works in practice. The next phase is a Proposed
+      Recommendation, to finalize the review of W3C Members. If W3C member
+      review agrees that a specification should be a Standard, W3C publishes it
+      as a Recommendation.</p>
     <p>Groups may also publish documents as W3C Notes. The two common purposes
       for Notes are </p>
     <ol>
@@ -243,6 +247,7 @@
       <li><a href="#hb-wd">Publication of zero or more revised Public Working
           Drafts</a>.</li>
       <li><a href="#last-call">Publication of a Candidate Recommendation</a>.</li>
+      <li><a href="#rec-pr">Publication of a Candidate Recommendation</a>.</li>
       <li><a href="#rec-publication">Publication as a Recommendation</a>.</li>
       <li>Possibly, <a href="#rec-edited">Publication as an Edited
           Recommendation</a></li>
@@ -317,9 +322,9 @@
         Group, and do not imply any endorsement by W3C or its members beyond
         agreement to work on a general area of technology.</dd>
       <dt id="RecsCR">Candidate Recommendation (CR)</dt>
-      <dd class="changed">A Candidate Recommendation is a document that
-        Satisfies the Working Group's technical requirements, and has already
-        received wide review. W3C publishes a Candidate Recommendation to
+      <dd class="changed">A Candidate Recommendation is a document that satisfies
+        the Working Group's technical requirements, and has already received
+        wide review. W3C publishes a Candidate Recommendation to
         <ul>
           <li>signal to the wider community that a final review should be done</li>
           <li>gather <a href="#implementation-experience">implementation
@@ -343,7 +348,7 @@
         This phase establishes a deadline for the Advisory Committee review
         which begins with Candidate Recommendation. Substantive changes <span class="rfc2119">must</span>
         not be made to a Proposed Recommendation except by publishing a new
-        Candidate Recommendation.</dd>
+        Working Draft or Candidate Recommendation.</dd>
       <dt id="RecsW3C">W3C Recommendation (REC)</dt>
       <dd>A W3C Recommendation is a specification or set of guidelines or
         requirements that, after extensive consensus-building, has received the
@@ -369,8 +374,8 @@
     </dl>
     <p>Working Groups and Interest Groups <em class="rfc2119">may</em> make
       available "Editor's drafts". Editor's drafts have no official standing
-      whatsoever, and do not imply consensus of a Working Group or Interest
-      Group, nor are their contents endorsed in any way by W3C.</p>
+      whatsoever, and do not necessarily imply consensus of a Working Group or
+      Interest Group, nor are their contents endorsed in any way by W3C.</p>
     <h3 id="requirements-and-definitions">7.2 General requirements and
       definitions</h3>
     <h4 id="general-requirements">7.2.1 General requirements for Technical
@@ -499,11 +504,11 @@
         this demonstrated; (for example, is there a test suite)?</li>
       <li>are there independent interoperable implementations of the current
         specification?</li>
-      <li>are there implementations created by other than the authors of the
-        specification?</li>
+      <li>are there implementations created by people other than the authors of
+        the specification?</li>
       <li>are implementations publicly deployed?</li>
       <li>is there implementation experience at all levels of the
-        specification's ecosystem (creation, consuming, publishing…)?</li>
+        specification's ecosystem (authoring, consuming, publishing…)?</li>
     </ul>
     <p>Planning and accomplishing a demonstration of (interoperable)
       implementations can be very time consuming. Groups are often able to work
@@ -562,8 +567,8 @@
     <h4 id="revised-wd">7.3.2 Revised Public Working Drafts</h4>
     <p>A Working Group <em class="rfc2119">should</em> publish a Working Draft
       to the W3C Technical Reports page when there have been significant changes
-      to the document that would benefit from review from beyond the Working
-      Group<em class="rfc2119"></em>. </p>
+      to the document that would benefit from review beyond the Working Group<em
+        class="rfc2119"></em>. </p>
     <p>If 6 months elapse without significant changes to a specification a
       Working Group <em class="rfc2119">should</em> publish a revised Working
       Draft, whose status section <em class="rfc2119">should</em> indicate
@@ -639,8 +644,8 @@
     <ul>
       <li>Return to <a href="#hb-wd">Working Draft</a></li>
       <li>Return to <a href="#last-call">Candidate Recommendation</a></li>
-      <li><a href="#rec-publication">Request Recommendation status</a> (The
-        expected next step)</li>
+      <li><a href="#rec-pr">Proposed Recommendation status</a> (The expected
+        next step)</li>
       <li><a href="#Note">Working Group Note</a></li>
     </ul>
     <p> <a href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
@@ -649,10 +654,10 @@
     <h4 id="revised-cr">7.4.1 Revised Candidate Recommendation</h4>
     <p>If there are any <a href="#substantive-change">substantive changes</a>
       made to a Candidate Recommendation other than to remove features
-      explicitly identified as "at risk", the Director <em class="rfc2119">must</em>&nbsp;
-      approve the publication of a revised Candidate Recommendation. This is
-      because substantive changes will generally require a new Exclusion
-      Opportunity per <a href="http://www.w3.org/Consortium/Patent-Policy/#sec-Exclusion">section
+      explicitly identified as "at risk", the Director <em class="rfc2119">must
+        not</em>&nbsp; approve the publication of a revised Candidate
+      Recommendation. This is because substantive changes will generally require
+      a new Exclusion Opportunity per <a href="http://www.w3.org/Consortium/Patent-Policy/#sec-Exclusion">section
         4</a> of the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
         Patent Policy</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-patentpolicy">PUB33</a>].
       Note that approval is <em>expected</em> to be fairly simple compared to
@@ -688,8 +693,6 @@
     </ul>
     <p>a Working Group</p>
     <ul>
-      <li><em class="rfc2119">must</em> republish the document, identifying it
-        as the basis of a Request for Recommendation,</li>
       <li><em class="rfc2119">must</em> show adequate <a href="#implementation-experience">implementation
           experience</a> except where an exception is approved by the Director,</li>
       <li><em class="rfc2119">must</em> show that the document has received <a
@@ -701,7 +704,6 @@
       <li><em class="rfc2119">must </em>identify any substantive issues raised
         since the close of the Candidate Recommendation review period by parties
         other than Advisory Committee representatives,</li>
-      <li><em class="rfc2119">must</em> identify where errata are tracked, and</li>
       <li><em class="rfc2119">may</em> remove features identified in the
         Candidate Recommendation document as "at risk" without repeating the
         transition to Candidate Recommendation.</li>
@@ -724,14 +726,22 @@
           compelling reason to do so. In such a case, the Director <em class="rfc2119">should</em>
           explain the reasons for that decision. </span></li>
     </ul>
+    <p>Possible Next Steps</p>
+    <ul>
+      <li>Return to <a href="#hb-wd">Working Draft</a></li>
+      <li>Return to <a href="#last-call">Candidate Recommendation</a></li>
+      <li><a href="#rec-pr">Proposed Recommendation status</a> (The expected
+        next step)</li>
+      <li><a href="#Note">Working Group Note</a></li>
+    </ul>
+    <ul>
+    </ul>
     <h3 id="rec-publication">7.6 W3C Recommendation</h3>
     <p>In addition to meeting the <a href="#transition-reqs">general
         requirements for advancement</a>,</p>
     <ul>
-      <li>The Director <em class="rfc2119">must</em> announce the provisional
-        approval of a Request for publication of a W3C Recommendation to the <a
-          href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
-          Committee</a>,</li>
+      <li>A Recommendation <em class="rfc2119">must</em> identify where errata
+        are tracked, and</li>
       <li>If there was any <a href="http://www.w3.org/2005/10/Process-20051014/policies.html#def-Dissent"
           rel="glossary" title="Definition of Dissent"><span class="dfn-instance">dissent</span></a>
         in Advisory Committee reviews, the Director <em class="rfc2119">must</em>
@@ -742,7 +752,8 @@
           Committee</a> <em class="rfc2119">may</em> <a href="http://www.w3.org/2005/10/Process-20051014/acreview.html#ACAppeal">appeal</a>
         the decision,</li>
       <li>The Director <em class="rfc2119">must</em> announce the publication
-        of a W3C Recommendation to other W3C groups and to the public.</li>
+        of a W3C Recommendation to <a href="http://www.w3.org/2005/10/Process-20051014/organization.html#AC">Advisory
+          Committee</a>, other W3C groups and to the public.</li>
     </ul>
     <p>Possible next steps:</p>
     <p>A W3C Recommendation normally retains its status indefinitely. However it</p>
@@ -761,19 +772,15 @@
       this Process Document, the term "erratum" (plural "errata") refers to any
       class of mistake, from mere editorial to a serious error that may affect
       the conformance with the Recommendation by software or content (e.g.,
-      content validity). <strong>Note:</strong> Before a document becomes a
-      Recommendation, the W3C Process focuses on <a href="#substantive-change">substantive
-        changes</a> (those related to prior reviews). After a document has been
-      published as Recommendation, the W3C Process focuses on those changes to a
-      technical report that might affect the conformance of content or deployed
-      software.</p>
+      content validity).</p>
     <p>Working Groups <span class="rfc2119">must</span> track errata on an
       "errata page." An errata page is a list of enumerated errors, possibly
       accompanied by corrections. Each Recommendation links to an errata page;
       see the Team's <a href="http://www.w3.org/Guide/pubrules">Publication
         Rules</a>.</p>
     <p>A correction is first "proposed" by the Working Group. A correction
-      becomes part of the Recommendation by the process described below.</p>
+      becomes part of the Recommendation by the process for Revising a
+      Recommendation described in the next section.</p>
     <p>A Working Group <span class="rfc2119">should</span> keep their errata
       pages up-to-date, as errors are reported by readers and implementers. A
       Working Group <span class="rfc2119">must</span> report errata page
