@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="keywords" content="W3C, World Wide Web, Web, WWW, Consortium, process, Team, Recommendation, Advisory Committee, Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity, Workshop, Symposium, charter, Activity Proposal, Working Draft, Process Document, Candidate Recommendation, Director, Proposed Recommendation, Last Call, Submission request">
     <link rel="stylesheet" href="style/default.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/base.css">
@@ -10,7 +10,11 @@
      .about { margin-left: 3em; margin-right: 3em; font-size: .83em}
      table { margin-left: auto; margin-right: auto }
      .diagram { text-align: center; margin: 2.5em 0 }
-</style> </head>
+
+      .rfc2119 {font-variant:small-caps}
+</style> <link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet">
+    <!--[if lt IE 9]><script src='undefined://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
+  </head>
   <body>
     <div class="noprint">
       <div class="navbar"><map name="navbar-top" title="Navigation Bar" id="navbar-top">
@@ -20,32 +24,28 @@
     </div>
     <div class="head"><a href="http://www.w3.org/"><img alt="W3C" src="http://www.w3.org/Icons/w3c_home"
           height="48" width="72"></a>
-      <h1>World Wide Web Consortium Process Document</h1>
-      <h2 class="notoc">14 October 2005</h2>
+      <h1>Editor's LAST CALL DRAFT Proposed World Wide Web Consortium Process
+        Document</h1>
+      <h2 class="notoc">19 March 2014</h2>
       <dl>
-        <dt>This version:</dt>
-        <dd><a href="http://www.w3.org/2005/10/Process-20051014/">http://www.w3.org/2005/10/Process-20051014/</a></dd>
+        <dt>Latest Editor's version:</dt>
+        <dd> <a href="https://dvcs.w3.org/hg/AB/raw-file/default/tr.html">https://dvcs.w3.org/hg/AB/raw-file/default/cover.html</a></dd>
         <dt>Latest operative version:</dt>
         <dd><a href="http://www.w3.org/Consortium/Process/">http://www.w3.org/Consortium/Process/</a></dd>
-        <dt>Previous operative version:</dt>
-        <dd><a href="http://www.w3.org/2004/02/Process-20040205/">http://www.w3.org/2004/02/Process-20040205/</a></dd>
         <dt>Editor:</dt>
+        <dd>Charles McCathie Nevile, <a style="color:black" href="http://yandex.com"><span
+              style="color: red;">Y</span>andex</a>—<a style="color:black" href="http://randex.ru"><span
+              style="color: red;">Я</span>ндекс</a></dd>
+        <dt>Previous editor:</dt>
         <dd>Ian Jacobs, <a href="http://www.w3.org/">W3C</a></dd>
       </dl>
-      <p>Please refer to the <a href="http://www.w3.org/Consortium/Process/errata"><strong>errata</strong></a>
-        for this document, which may include some normative corrections.</p>
-      <p>This document is also available in these non-normative packages: <a href="process.html">single&nbsp;HTML&nbsp;file</a>,
-        <a href="process.tgz">self-contained&nbsp;gzipped&nbsp;tar&nbsp;archive</a>,
-        <a href="process.zip">self-contained&nbsp;zip&nbsp;archive.</a></p>
-      <p>There may be <a href="http://www.w3.org/Consortium/Translation/"><strong>translations</strong></a>
-        of this document.</p>
       <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-        © 1996-2005 <a href="/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
+        © 1996-2014 <a href="/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
         (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
         <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
-        <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a
-          href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
-          href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
+        <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
+        All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+        <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a
           rel="Copyright" href="/Consortium/Legal/copyright-documents">document
           use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software
           licensing</a> rules apply. Your interactions with this site are in
@@ -65,27 +65,65 @@
     <p>For more information about the W3C mission and the history of W3C, please
       refer to <a href="http://www.w3.org/Consortium/">About W3C</a> [<a href="refs.html#ref-mission">PUB15</a>].</p>
     <h2 class="notoc"><a name="status" id="status">Status of this Document</a></h2>
-    <p>This is the 14 October 2005 version of the W3C Process Document. This
-      document has been produced by the <a href="/Member/Board/">W3C Advisory
-        Board</a> and reviewed by the <a href="/Consortium/Member/List">W3C
-        Members</a> and Team.</p>
-    <p>The <a href="/Consortium/Process/ProcessChanges">list of changes to the
-        public Process Document</a> is available on the Web.</p>
-    <p>W3C, including all existing chartered groups, follows the most recent
-      operative Process Document announced to the Membership.</p>
-    <p>Please send comments about this document to process-issues@w3.org (<a href="http://lists.w3.org/Archives/Member/process-issues/">Member-only
+    <p>This is the 19 March 2014 (Editor's Proposal for a) Last Call draft of
+      the W3C Process Document. This document has been produced by the W3C
+      Advisory Board's Process Chapter 7 Task Force, working in the <a href="http://www.w3.org/Community/w3process">Revising
+        W3C Process Community Group</a> and reviewed by the <a href="/Member/Board">W3C
+        Advisory Board</a>.</p>
+    <p>The only substantive changes between this draft and the <a href="http://www.w3.org/2005/10/Process-20051014/">14
+        October 2005 Process Document</a> are to <a href="tr.html">Chapter 7</a>.
+      A <a href="https://www.w3.org/community/w3process/track/products/1">Public
+        Issue Tracker for chapter 7</a> and <a href="https://dvcs.w3.org/hg/AB/">detailed
+        changelogs</a> are available online. Major changes include</p>
+    <ul>
+      <li>New requirements that Working groups <em class="rfc2119">should</em>
+        document known implementation and <span class="rfc2119">must</span>
+        document expected next steps for all publications </li>
+      <li>New requirement that Working groups <em class="rfc2119">should</em>
+        publish abandoned work as a W3C Note</li>
+      <li>Recognition that Interest Groups <span class="rfc2119">may</span>
+        publish W3C Notes</li>
+      <li>If W3C closes a Working Group, they <em class="rfc2119">must</em>
+        republish its unfinished work as Notes. </li>
+      <li>Implementation requirements for passing beyond Candidate
+        Recommendation are not simply listed as "2 interoperable
+        implementations", instead a new sections gives guidance on what is
+        considered when assessing "<a href="#implementation-experience">adequate
+          implementation experience</a>".</li>
+      <li>Instead of relying on a Last Call publication for adequate review
+        Working Groups need to demonstrate "<a href="#wide-review">wide review</a>"
+        as part of the requirements to publish a spec as Candidate
+        Recommendation, while leaving them to achieve this as they see fit.</li>
+      <li>There is a stronger emphasis (without creating new formal
+        requirements) on getting review and testing implementation as early as
+        possible. How to do this is left to Working Groups to determine.</li>
+      <li>Last Call and Candidate Recommendation have been collapsed together.
+        Some of the requirements are therefore enforced earlier in the process.</li>
+      <li>Advisory Committee review now begins at the same time as Candidate
+        recommendation, but still ends no less than 4 weeks after publication as
+        a Proposed Recommendation.&nbsp;</li>
+      <li>The Director <em class="rfc2119">must</em> address dissenting AC
+        review comments <strong>publicly</strong>, 2 weeks <em>before</em>
+        publication of a Recommendation.</li>
+      <li>Errata cannot be made normative except by revising a Recommendation</li>
+    </ul>
+    <p>The document has also been converted from XHTML 1.0 to HTML5.</p>
+    <ul>
+    </ul>
+    <p>W3C, including all existing chartered groups, follows the <a href="http://www.w3.org/Consortium/Process/">most
+        recent operative Process Document</a> announced to the Membership.</p>
+    <p>Please send comments about this document to the <a href="http://www.w3.org/Community/w3process">Revising
+        W3C Process Community Group</a> (<a href="http://lists.w3.org/Archives/Public/public-w3process">Mailing
+        list archive</a>) or to process-issues@w3.org (<a href="http://lists.w3.org/Archives/Member/process-issues">Member-only
         archive</a>).</p>
-    <p>Additional Member-only information about the Process Document (e.g.,
-      issues lists, Member-only drafts, and changes to Member-only drafts) is
-      available from the <a href="/Consortium/Process/Plan/">Process Plan page</a>.
-      General information <a href="/Consortium/">about W3C</a> is available on
-      the Web, including information about <a href="/Consortium/join">becoming
-        a W3C Member</a>.</p>
-    <p>The terms MUST, MUST NOT, SHOULD, SHOULD NOT, REQUIRED, and MAY when
+    <p>The terms <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>,
+      <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em
+        class="rfc2119">required</em>, and <em class="rfc2119">may</em> when
       highlighted (through style sheets, and in uppercase in the source) are
       used in accordance with <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC
-        2119</a> [<a href="refs.html#ref-RFC2119">RFC2119</a>]. The term NOT
-      REQUIRED (not defined in RFC 2119) indicates exemption.</p>
+        2119</a> [<a href="refs.html#ref-RFC2119">RFC2119</a>]. The term <dfn><em
+          class="rfc2119">not required</em></dfn> is equivalent to the term <em
+        class="rfc2119">may</em> as defined in RFC 2119.</p>
     <p>Some terms have been capitalized in this document (and in other W3C
       materials) to indicate that they are entities with special relevance to
       the W3C Process. These terms are defined herein, and readers should be
