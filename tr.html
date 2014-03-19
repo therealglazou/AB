@@ -1,134 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta charset="UTF-8">
     <title>A Rec-track Process Draft Proposal</title>
+    <link rel="contents" href="cover.html#toc">
+    <link rel="next" href="acreview.html">
+    <link rel="previous" href="groups.html">
     <link href="https://www.w3.org/StyleSheets/TR/base.css" type="text/css" rel="stylesheet">
     <style type="text/css">
      
-      .from {display:none }
         
      .about { margin-left: 3em; margin-right: 3em; font-size: .83em}
      table { margin-left: auto; margin-right: auto }
      .diagram { text-align: center; margin: 2.5em 0 }
-      .issue { line-height: 125% ; border: dashed red 2px; background-color: yellow }
-      .issue::before {content: "Issue: "}
-      .issue::after {content: "@@"}
+
       .rfc2119 {font-variant:small-caps}
-</style> <link href="prism.css" rel="stylesheet">
-    <link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet">
+</style> <link href="https://www.w3.org/StyleSheets/TR/W3C-ED" rel="stylesheet">
     <!--[if lt IE 9]><script src='undefined://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
   </head>
   <body>
-    <div class="head">
-      <p> <a href="http://www.w3.org/"><img alt="W3C" src="http://www.w3.org/Icons/w3c_home"
-            height="48" width="72"></a> </p>
-      <h1 class="title" id="title">Recommendation Track Process draft proposal</h1>
-      <h2 id="draft-shorthand-status"><abbr title="World Wide Web Consortium"></abbr>Editors'
-        Draft 9 March 2014</h2>
-      <dl>
-        <dt>Current active version:</dt>
-        <dd><a href="http://www.w3.org/2005/10/Process-20051014/tr.html">http://www.w3.org/2005/10/Process-20051014/tr.html</a></dd>
-        <dt>Latest editor's draft:</dt>
-        <dd> <a href="https://dvcs.w3.org/hg/AB/raw-file/default/tr.html">https://dvcs.w3.org/hg/AB/raw-file/default/tr.html</a></dd>
-        <dt>Editor:</dt>
-        <dd><a href="mailto:chaals@yandex-team.ru">Charles (McCathie) Nevile</a>,
-          <a href="http://www.yandex.ru">Яндекс</a>—<a href="http://yandex.com">Yandex</a></dd>
-      </dl>
-      <p class="copyright"> <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-        © 2013-2014 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
-        (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-        <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
-        <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
-        All Rights Reserved. <abbr title="World Wide Web Consortium">W3C</abbr>
-        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-        <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>,
-        <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document
-          use</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-software">software
-          licensing</a> rules apply. </p>
-      <hr> </div>
     <div class="noprint">
-      <div class="navbar">
-        <p>This is a draft proposal to replace the <a href="http://www.w3.org/2005/10/Process-20051014/tr.html">current
-            chapter 7 of the W3C process document</a> with a more effective W3C
-          Specification life cycle. </p>
-        <p>This draft follows the <a href="https://www.w3.org/wiki/AB/2014-03-SF">4-5
-            March meeting of the W3C Advisory Board</a> and incorporates all
-          known outstanding review comments. It is proposed to the Advisory
-          Board for final review. If there is no disagreement, the Advisory
-          Board expects to request that the Advisory Committee review a version
-          of the Process Document with chapter 7 replaced by this chapter,
-          followed by a formal survey on accepting the new version as the
-          operative process document.</p>
-        <p>This introductory section (before the chapter title below) will be
-          removed when this chapter is re-incorporated into the full process
-          document.</p>
-        <p>An initial version was first proposed to the W3C Advisory Board on 13
-          May 2013 as a possible replacement for the <a href="http://www.w3.org/2005/10/Process-20051014/tr.html">current
-            chapter 7 of the W3C process document</a>, and a <a href="http://yadi.sk/d/Zikwkr385JG8f">subsequent
-            version</a> was <a href="http://lists.w3.org/Archives/Public/public-w3process/2013May/0023.html">proposed</a>
-          to the <a href="http://www.w3.org/community/w3process/">W3C Process
-            Community Group</a> on 29 May 2013 by Charles Nevile &lt;<a href="mailto:chaals@yandex-team.ru">chaals@yandex-team.ru</a>&gt;
-          for discussion. Subsequent editor's drafts have been public, to enable
-          broad input. However, following the existing process, the Advisory
-          Board retains formal responsibility for decisions on what it proposes
-          to the Advisory Committee, and the adoption of any change to the
-          process will follow the <a href="http://www.w3.org/2005/10/Process-20051014/processdoc.html#GAProcess">existing
-            process for such changes</a>, subject to the resolution of <a href="https://www.w3.org/community/w3process/track/issues/39">ISSUE-39</a>.</p>
-        <p>I am grateful to the W3C Advisory Board, the W3C Process Community
-          Group, Art Barstow, Robin Berjon, Wayne Carr, Marcos Cáceres,
-          Fantasai, Daniel Glazman, Ivan Herman, Ian Hickson, Ian Jacobs, Jeff
-          Jaffe, Chris Lilley, Ralph Swick, Anne van Kesteren, Steve Zilles, and
-          many people I have forgotten to acknowledge for suggestions, comments
-          and discussions that helped me sort out my thinking, and to Ora
-          Lassila for the original version of the image that illustrates the
-          normal progress of a W3C Recommendation-track document. </p>
-        <p>Please send comments on this document to, or participate in, the <a
-            href="http://www.w3.org/community/w3process/">W3C Process Community
-            Group</a>. Issues related to this proposal are recorded in that
-          group's issue tracker using the product "<a href="https://www.w3.org/community/w3process/track/products/1">Document
-            Lifecycle (chapter 7)</a>"</p>
-        <h4> Major changes: </h4>
-        <ul>
-          <li>New requirements that Working groups <em class="rfc2119">should</em>
-            document known implementation and <span class="rfc2119">must</span>
-            document expected next steps for all publications </li>
-          <li>New requirement that Working groups <em class="rfc2119">should</em>
-            publish abandoned work as a W3C Note</li>
-          <li>Recognition that Interest Groups <span class="rfc2119">may</span>
-            publish W3C Notes</li>
-          <li>If W3C closes a Working Group, they <em class="rfc2119">must</em>
-            republish its unfinished work as Notes. </li>
-          <li>Implementation requirements for passing beyond Candidate
-            Recommendation are not simply listed as "2 interoperable
-            implementations", instead a new sections gives guidance on what is
-            considered when assessing "<a href="#implementation-experience">adequate
-              implementation experience</a>".</li>
-          <li>Instead of relying on a Last Call publication for adequate review
-            Working Groups must demonstrate "<a href="#wide-review">wide review</a>"
-            to publish a spec as Candidate Recommendation, while leaving them to
-            achieve this as they see fit.</li>
-          <li>There is a stronger emphasis (without creating new formal
-            requirements) on getting review and testing implementation as early
-            as possible. How to do this is left to Working Groups to determine.</li>
-          <li>Last Call and Candidate Recommendation have been collapsed
-            together. Some of the requirements are therefore enforced earlier in
-            the process.</li>
-          <li>Advisory Committee review now begins at the same time as Candidate
-            recommendation, and ends no less than 4 weeks after publication as a
-            Proposed Recommendation.&nbsp;</li>
-          <li>The Director is required to address dissenting AC review comments
-            <strong>publicly</strong>, 2 weeks <em>before</em> publication of a
-            Recommendation.</li>
-          <li>Errata cannot be made normative except by revising a
-            Recommendation</li>
-          <li>And it is in HTML5</li>
-        </ul>
-        <p>Editorially, I have tried to rationalize requirements and clarify who
-          is responsible for meeting them. I have also removed advice and
-          general statements to keep this version short.</p>
+      <div class="navbar"><map name="navbar-top" title="Navigation Bar" id="navbar-top">
+          <p>[<a accesskey="n" rel="Next" href="acreview.html">next chapter</a>]
+            &nbsp; [<a accesskey="p" rel="Prev" href="groups.html">previous
+              chapter</a>] &nbsp; [<a accesskey="c" rel="Contents" href="cover.html#toc">contents</a>]</p>
+          <hr></map>
       </div>
     </div>
+    <h1>W3C Process Document</h1>
     <h2 id="Reports">7 W3C Technical Report Development Process</h2>
     <p>The W3C technical report development process is the set of steps and
       requirements followed by W3C <a href="http://www.w3.org/2005/10/Process-20051014/groups#GroupsWG">Working
@@ -151,7 +50,6 @@
       </p>
     <h3>Table of Contents</h3>
     <ul id="mozToc">
-      <!--mozToc h3 1 h4 2 h5 3-->
       <li><a href="#rec-advance">7.1 W3C Technical Reports</a>
         <ul>
           <li><a href="#recs-and-notes">7.1.1 Recommendations and Notes</a></li>
@@ -218,8 +116,8 @@
       collects&nbsp; implementation experience to demonstrate that the
       specification works in practice. The next phase is a Proposed
       Recommendation, to finalize the review of W3C Members. If the Director
-      determines that W3C member review supports a specification becoming a standard,
-      W3C publishes it as a Recommendation.</p>
+      determines that W3C member review supports a specification becoming a
+      standard, W3C publishes it as a Recommendation.</p>
     <p>Groups may also publish documents as W3C Notes, typically either to
       document information other than technical specifications, such as use
       cases motivating a specification and best practices for its use, or to
@@ -905,8 +803,11 @@
       announcements of the various steps, and <a href="http://www.w3.org/2002/05/rec-tips">tips
         on getting to Recommendation faster</a> [<a href="http://www.w3.org/2005/10/Process-20051014/refs.html#ref-rec-tips">PUB27</a>].</p>
     <div class="noprint">
-      <div class="navbar"> <map name="navbar-bottom" title="Navigation Bar" id="navbar-bottom">
-          <p>[<a accesskey="c" rel="Contents" href="#toc">contents</a>] </p>
+      <div class="navbar"><map name="navbar-bottom" title="Navigation Bar" id="navbar-bottom">
+          <hr>
+          <p>[<a accesskey="n" rel="Next" href="acreview.html">next chapter</a>]
+            &nbsp; [<a accesskey="p" rel="Prev" href="groups.html">previous
+              chapter</a>] &nbsp; [<a accesskey="c" rel="Contents" href="cover.html#toc">contents</a>]</p>
         </map>
       </div>
     </div>
