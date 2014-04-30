@@ -528,8 +528,7 @@
     <ul>
       <li>Return to <a href="#hb-wd">Working Draft</a></li>
       <li>A revised <a href="#last-call">Candidate Recommendation</a></li>
-      <li><a href="#rec-pr">Proposed Recommendation status</a> (The expected
-        next step)</li>
+      <li><a href="#rec-pr">Proposed Recommendation</a> (The expected next step)</li>
       <li><a href="#Note">Working Group Note</a></li>
     </ul>
     <p>If there was any <a href="policies.html#def-Dissent" rel="glossary" title="Definition of Dissent"><span
@@ -655,13 +654,15 @@
     <p>Possible next steps:</p>
     <p>A W3C Recommendation normally retains its status indefinitely. However it</p>
     <ul>
-      <li><em class="rfc2119">may</em> be republished as an <a href="#rec-modify">Edited
+      <li><em class="rfc2119">may</em> be republished as an <a href="#rec-modify">(Edited)
+
           Recommendation</a>, or</li>
       <li><em class="rfc2119">may</em> be <a href="#rec-rescind">rescinded</a>.</li>
     </ul>
     <h3 id="rec-modify">7.7 Modifying a W3C Recommendation</h3>
     <p>This section details the management of errors in, and the process for
-      making changes to a Recommendation.</p>
+      making changes to a Recommendation. Please see also the <a href="http://www.w3.org/2003/01/republishing/">Requirements
+        for modification of W3C Technical Reports</a> [<a href="refs.html#in-place-tr-mod">PUB35</a>].</p>
     <p>
       <svg xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500 160" height="12em" width="50em">
@@ -700,14 +701,15 @@
             <polygon points="301,45 296,47 301,49"></polygon> </g>
           <g id="ToRec" stroke="black" fill="black">
             <path d="M391,40h20"></path>
-            <polygon points="404,36 414,40 404,44"></polygon> </g>
-          <g id="nodeRec">
-            <ellipse ry="18" rx="28" cy="40" cx="443" stroke="black" fill="none"></ellipse>
-            <a xlink:href="#RecsW3C"><text font-size="14" font-family="Times,serif"
-                y="44" x="443" text-anchor="middle">REC</text></a> </g></g>
+            <polygon points="404,36 414,40 404,44"></polygon> </g> </g>
+        <g id="nodeRec" stroke="black">
+          <ellipse ry="18" rx="28" cy="40" cx="443" fill="none" stroke-width="2"></ellipse>
+          <a xlink:href="#RecsW3C"><text font-size="16" font-family="Times,serif"
+              y="44" x="443" text-anchor="middle" stroke-width=".3">REC</text></a></g>
         <g id="changeARec" stroke="black">
           <path d="M443,58 v20"></path><polygon points="443,78 441,71 445,71"></polygon>
           <polygon points="443,78 486,103 443,128 400,103" fill="none"></polygon>
+          <text x="445" y="68" font-size="10" stroke="none">Changes to text</text>
           <text x="443" y="103" text-anchor="middle" font-size="10" stroke-width="0.2"><tspan>Substantive</tspan><tspan
               x="443" y="113" text-anchor="middle">changes?</tspan></text></g>
         <g id="RecToPR">
@@ -752,31 +754,38 @@
       interested parties, notably when corrections are proposed or incorporated
       into an Edited Recommendation, according to the Team's requirements.</p>
     <h4 id="revised-rec">7.7.2 Revising a Recommendation</h4>
+    <p>A Working group <em class="rfc2119">may</em> request republication of a
+      Recommendation, or W3C <em class="rfc2119">may</em> republish a
+      Recommendation, to make corrections that do not result in any changes to
+      the text of the specification.</p>
     <p><a href="#editorial-change">Editorial changes</a> to a Recommendation
       require no technical review of the proposed changes. A Working Group <span
-        class="rfc2119">may</span> request republication of a Recommendation for
-      these classes of change, or W3C <span class="rfc2119">may</span>
-      republish a Recommendation with this class of change. The modified
-      Recommendation is published according to the Team's requirements,
-      including <a href="http://www.w3.org/Guide/pubrules">Publication Rules</a>
-      [<a href="refs.html#ref-pubrules">PUB31</a>] and the <a href="http://www.w3.org/2003/01/republishing/">Requirements
-        for modification of W3C Technical Reports</a> [<a href="refs.html#in-place-tr-mod">PUB35</a>].</p>
-    <p>For <a href="#substantive-change">substantive changes</a> that do not
-      add new features, a Working Group <span class="rfc2119">must</span>
-      request publication of an <a href="#rec-edited">Edited Recommendation</a>.</p>
-    <p>To publish an Edited Recommendation as a W3C Recommendation, in addition
-      to meeting the <a href="#rec-requirements">requirements for all W3C
-        Recommendations</a>, a Working Group</p>
+        class="rfc2119">may</span> request publication of a <a href="#rec-pr">Proposed
+        Recommendation</a>&nbsp; or W3C <span class="rfc2119">may</span>
+      publish a <a href="#rec-pr">Proposed Recommendation</a> to make this
+      class of change without passing through earlier maturity levels. Such
+      publications are <em class="rfc2119">may</em> be called a <dfn>Proposed
+        Edited Recommendation</dfn>.</p>
+    <p>To make corrections to a Recommendation that produce <a href="#substantive-change">substantive
+        changes</a> but do not add new features, a Working Group <span class="rfc2119">may</span>
+      request publication of a <a href="#last-call">Candidate Recommendation</a>,
+      without passing through earlier maturity levels.</p>
+    <p>In the latter two cases, the resulting Recommendation <em class="rfc2119">may</em>
+      be called an <dfn>Edited Recommendation</dfn>.</p>
+    <p>When requesting the publication of an edited Recommendation as described
+      in this section, in addition to meeting the requirements for the relevant
+      maturity level, a Working Group</p>
     <ul>
-      <li><em class="rfc2119">must</em> republish the document, identifying it
-        as a Proposed (edited) Recommendation,</li>
-      <li><em class="rfc2119">must</em> show that the document has received <a
-          href="#wide-review">wide review</a>, and </li>
+      <li><em class="rfc2119">must</em> show that the changes to the document
+        have received <a href="#wide-review">wide review</a>, and </li>
       <li><em class="rfc2119">should</em> address all recorded errata.</li>
+    </ul>
+    <ul>
     </ul>
     <p>For changes which introduces a new feature or features, W3C <span class="rfc2119">must</span>
       follow the full process of <a href="#rec-advance">advancing a technical
-        report to Recommendation</a>.</p>
+        report to Recommendation</a> beginning with a new First Public Working
+      Draft.</p>
     <h3 id="Note">7.8 Publishing a Working Group or Interest Group Note</h3>
     <p>Working Groups and Interest Groups publish material that is not a formal
       specification as Notes. This includes supporting documentation for a
