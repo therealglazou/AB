@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>A Rec-track Process Draft Proposal</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Editor's Draft 7 Technical Report Development Process</title>
     <link rel="contents" href="cover.html#toc">
     <link rel="next" href="acreview.html">
     <link rel="previous" href="groups.html">
@@ -660,8 +660,77 @@
       <li><em class="rfc2119">may</em> be <a href="#rec-rescind">rescinded</a>.</li>
     </ul>
     <h3 id="rec-modify">7.7 Modifying a W3C Recommendation</h3>
-    <p>The following sections discuss the management of errors and the process
-      for making changes to a Recommendation.</p>
+    <p>This section details the management of errors in, and the process for
+      making changes to a Recommendation.</p>
+    <p>
+      <svg xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 500 160" height="12em" width="50em">
+        <g id="basicProcess" opacity=".6">
+          <g id="nodeWD">
+            <ellipse ry="18" rx="38" cy="40" cx="147" stroke="black" fill="none"></ellipse>
+            <a xlink:href="#RecsWD"><text font-size="14" font-family="Times,serif"
+                y="44" x="147" text-anchor="middle">WD</text></a> </g>
+          <g id="repeatWD" stroke="black">
+            <path d="M128,24C123,14 129,4 147,4 158,4 165,8 167,14" fill="none"
+              stroke-dasharray="6 1"></path>
+            <polygon points="170,14 166,24 164,13"></polygon> </g>
+          <g class="edge" id="toCR" stroke="black" fill="black">
+            <path d="M185,40h31"></path>
+            <polygon points="211,36 221,40 211,44"></polygon> </g>
+          <g id="nodeCR">
+            <ellipse ry="18" rx="38" cy="40" cx="260" stroke="black" fill="none"></ellipse>
+            <a xlink:href="#RecsCR"><text font-size="14" font-family="Times,serif"
+                y="44" x="260" text-anchor="middle">CR</text></a> </g>
+          <g class="edge" id="repeatCR" stroke="black" fill="black">
+            <path d="M242,24C238,14 244,4 260,4 271,4 277,8 279,14" stroke-dasharray="5 3"
+              fill="none"></path>
+            <polygon points="282,14 277,24 275,13"></polygon> </g>
+          <g id="backToWD" stroke="#666" fill="#666">
+            <path d="M190,47h34" stroke-dasharray="4 4"></path>
+            <polygon points="190,45 183,47 190,49"></polygon> </g>
+          <g class="edge" id="ToPR" stroke="black" fill="black">
+            <path d="M298,40h27"></path>
+            <polygon points="324,36 334,40 324,44"></polygon> </g>
+          <g id="nodePR">
+            <ellipse ry="18" rx="28" cy="40" cx="363" stroke="black" fill="none"></ellipse>
+            <a xlink:href="#RecsPR"><text font-size="14" font-family="Times,serif"
+                y="44" x="363" text-anchor="middle">PR</text></a> </g>
+          <g id="BackToCR" stroke="#aaa" fill="#aaa">
+            <path d="M301,47h38" stroke-dasharray="2 5"></path>
+            <polygon points="301,45 296,47 301,49"></polygon> </g>
+          <g id="ToRec" stroke="black" fill="black">
+            <path d="M391,40h20"></path>
+            <polygon points="404,36 414,40 404,44"></polygon> </g>
+          <g id="nodeRec">
+            <ellipse ry="18" rx="28" cy="40" cx="443" stroke="black" fill="none"></ellipse>
+            <a xlink:href="#RecsW3C"><text font-size="14" font-family="Times,serif"
+                y="44" x="443" text-anchor="middle">REC</text></a> </g></g>
+        <g id="changeARec" stroke="black">
+          <path d="M443,58 v20"></path><polygon points="443,78 441,71 445,71"></polygon>
+          <polygon points="443,78 486,103 443,128 400,103" fill="none"></polygon>
+          <text x="443" y="103" text-anchor="middle" font-size="10" stroke-width="0.2"><tspan>Substantive</tspan><tspan
+              x="443" y="113" text-anchor="middle">changes?</tspan></text></g>
+        <g id="RecToPR">
+          <text x="370" y="100" font-size="10" stroke="none">No</text>
+          <path d="M400,103h-37v-45" stroke="black" fill="none"></path><polygon
+            stroke="black" points="363,58 361,65 365,65"></polygon></g>
+        <g id="RecSubstantiveChanges" stroke="black">
+          <text x="488" y="100" font-size="10" stroke-width="0.2">Yes</text>
+          <path d="M486,103h20v40h-246v-15" fill="none"></path>
+          <polygon points="260,128 262,133 258,133"></polygon>
+          <polygon points="260,128 300,103 260,78 220,103" fill="none"></polygon>
+          <text font-size="10" stroke-width="0.2" x="260" y="98" text-anchor="middle">New<tspan
+              x="260" y="108" text-anchor="middle">Features?</tspan></text></g>
+        <g id="NoNewFeatures">
+          <path d="M260,78v-20" stroke="black"></path>
+          <text x="262" y="75" font-size="10">No</text>
+          <polygon points="260,58 262,63 258,63" stroke="black"></polygon> </g>
+        <g id="BackToFPWD" stroke="black">
+          <a xlink:href="#first-wd"><text font-size="8" font-family="Times,serif"
+              y="38" x="66" stroke="none">First WD</text></a>
+          <path d="M220,103h-160v-63h43" fill="none"></path>
+          <text x="200" y="100" stroke-width="0.2" fill="black" font-size="10">Yes</text>
+          <polygon points="103,38 108,40 103,42"></polygon> </g> </svg></p>
     <h4 id="errata">7.7.1 Errata Management</h4>
     <p>Tracking errors is an important part of a Working Group's ongoing care of
       a Recommendation; for this reason, the scope of a Working Group charter
