@@ -218,13 +218,13 @@
               experience</a></li>
           <li>begin formal review by the Advisory Committee, who <em class="rfc2119">may</em>
             recommend that the document be published as a W3C Recommendation,
-            returned to the Working Group for further work, or abandoned. </li>
+            returned to the Working Group for further work, or abandoned.</li>
+          <li>Provide an exclusion opportunity as per the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
+              Patent Policy</a> [<a href="refs.html#ref-patentpolicy">PUB33</a>].
+            A Candidate Recommendation under this process corresponds to the
+            "Last Call Working Draft" discussed in the Patent Policy.</li>
         </ul>
       </dd>
-      <dd class="new"><strong>Note:</strong> Candidate Recommendation is the
-        state referred to in the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
-          Patent Policy</a> [<a href="refs.html#ref-patentpolicy">PUB33</a>] as
-        "Last Call Working Draft"</dd>
       <dd><strong>Note:</strong> Candidate Recommendations are expected to be
         acceptable as Recommendations. Announcement of a different next step <em
           class="rfc2119">should</em> include the reasons why the change in
@@ -240,7 +240,9 @@
       <dd>A W3C Recommendation is a specification or set of guidelines or
         requirements that, after extensive consensus-building, has received the
         endorsement of W3C Members and the Director. W3C recommends the wide
-        deployment of its Recommendations as standards for the Web.</dd>
+        deployment of its Recommendations as standards for the Web. The W3C
+        Royalty-Free IPR licenses granted under the Patent Policy apply to W3C
+        Recommendations.</dd>
       <dt id="WGNote">Working Group Note, Interest Group Note (NOTE) </dt>
       <dd>A Working Group Note or Interest Group Note is published by a
         chartered Working Group or Interest Group to provide a stable reference
@@ -278,7 +280,8 @@
       <li><em class="rfc2119">must</em> be unique each time a specification is
         published,<br>
         <em class="rfc2119"></em></li>
-      <li><em class="rfc2119">must</em> state who developed the specification, </li>
+      <li><em class="rfc2119">must</em> state which Working Group developed the
+        specification, </li>
       <li><em class="rfc2119">must</em> state how to send comments or file bugs,
         and where these are recorded, </li>
       <li><em class="rfc2119">must</em> include expectations about next steps,</li>
@@ -328,7 +331,8 @@
         step.</li>
       <li><em class="rfc2119">should</em> report any changes in dependencies
         with other groups.</li>
-      <li><em class="rfc2119">should</em> document known implementation.</li>
+      <li><em class="rfc2119">should</em> provide information about
+        implementations known to the Working Group.</li>
     </ul>
     <p>For a First Public Working Draft there is no "previous maturity level",
       so many requirements do not apply, and approval is normally fairly
@@ -353,11 +357,12 @@
       stakeholders of the Web community, including the general public, have had
       adequate notice of the progress of the Working Group and thereby an
       opportunity to comment on the specification. Before approving transitions,
-      the Director will consider who has actually reviewed the document and
-      provided comments, the record of requests to and responses from reviewers,
-      especially groups identified as dependencies in the charter, and seek
-      evidence of clear communication to the general public about appropriate
-      times and which content to review. </p>
+      the Director will consider who has been explicitly offered a reasonable
+      opportunity to review the document, who has provided comments, the record
+      of requests to and responses from reviewers, especially groups identified
+      as dependencies in the charter, and seek evidence of clear communication
+      to the general public about appropriate times and which content to review.
+    </p>
     <p>For example, inviting review of new or significantly revised sections
       published in Working Drafts, and tracking those comments and the Working
       Group's responses, is generally a good practice which would often be
@@ -383,7 +388,7 @@
       be limited to):</p>
     <ul>
       <li>is each feature of the current specification implemented, and how is
-        this demonstrated; (for example, is there a test suite)?</li>
+        this demonstrated?</li>
       <li>are there independent interoperable implementations of the current
         specification?</li>
       <li>are there implementations created by people other than the authors of
@@ -391,6 +396,7 @@
       <li>are implementations publicly deployed?</li>
       <li>is there implementation experience at all levels of the
         specification's ecosystem (authoring, consuming, publishing…)?</li>
+      <li>are there reports of difficulties or problems with implementation?</li>
     </ul>
     <p>Planning and accomplishing a demonstration of (interoperable)
       implementations can be very time consuming. Groups are often able to work
@@ -439,8 +445,8 @@
     </ul>
     <h4 id="first-wd">7.3.1 First Public Working Draft</h4>
     <p>To publish the First Public Working Draft of a document, a Working Group
-      must meet the <a href="#transition-reqs">general requirements for
-        advancement</a>.</p>
+      must meet the applicable <a href="#transition-reqs">general requirements
+        for advancement</a>.</p>
     <p>The Director <em class="rfc2119">must</em> announce the publication of a
       First Public Working Draft publication to other W3C groups and to the
       public. </p>
@@ -451,8 +457,8 @@
     <h4 id="revised-wd">7.3.2 Revising Public Working Drafts</h4>
     <p>A Working Group <em class="rfc2119">should</em> publish a Working Draft
       to the W3C Technical Reports page when there have been significant changes
-      to the document that would benefit from review beyond the Working Group<em
-        class="rfc2119"></em>. </p>
+      to the previous published document that would benefit from review beyond
+      the Working Group<em class="rfc2119"></em>. </p>
     <p>If 6 months elapse without significant changes to a specification a
       Working Group <em class="rfc2119">should</em> publish a revised Working
       Draft, whose status section <em class="rfc2119">should</em> indicate
@@ -516,7 +522,8 @@
     </ul>
     <p>The Director <em class="rfc2119">must</em> announce the publication of a
       Candidate Recommendation to other W3C groups and to the public, and <em class="rfc2119">must</em>
-      begin an Advisory Committee Review of the specification.</p>
+      begin an Advisory Committee Review on the question of whether W3C should
+      publish the specification as a W3C Recommendation.</p>
     <p> A Candidate Recommendation corresponds to a "Last Call Working Draft" as
       used in the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
         Patent Policy</a> [<a href="refs.html#ref-patentpolicy">PUB33</a>].
@@ -872,6 +879,8 @@
     <p> A Rescinded Recommendation <em class="rfc2119">must</em> be published
       with up to date status. The updated version <em class="rfc2119">may</em>
       remove the rescinded content (i.e. the main body of the document).</p>
+    <p><span style="font-weight: bold;">Note:</span> the original Recommendation
+      document will continue to be available at its version-specific URL.</p>
     <h3 id="further-reading">Further reading</h3>
     <p>Refer to <a href="http://www.w3.org/2003/05/Transitions">"How to
         Organize a Recommendation Track Transition"</a> in the <a href="http://www.w3.org/Guide/">Member
