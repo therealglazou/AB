@@ -81,20 +81,6 @@
         archive</a>). A <a href="https://www.w3.org/community/w3process/track/">Public
         Issue Tracker</a> and <a href="https://dvcs.w3.org/hg/AB/">detailed
         changelogs</a> are available online.</p>
-    <p>The terms <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>,
-      <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em
-        class="rfc2119">required</em>, and <em class="rfc2119">may</em> are
-      used in accordance with <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC
-        2119</a> [<a href="#ref-RFC2119">RFC2119</a>]. The term <dfn><em class="rfc2119">not
-          required</em></dfn> is equivalent to the term <em class="rfc2119">may</em>
-      as defined in RFC 2119. <span class="issue">move this sentence out of
-        status</span></p>
-    <p>Some terms have been capitalized in this document (and in other W3C
-      materials) to indicate that they are entities with special relevance to
-      the W3C Process. These terms are defined herein, and readers should be
-      aware that the ordinary (English) definitions are incomplete for purposes
-      of understanding this document. <span class="issue">move this sentence
-        out of status</span></p>
     <h2 class="notoc"><a id="pp">Relation of Process Document to Patent Policy</a></h2>
     <p>W3C Members' attention is called to the fact that provisions of the
       Process Document are binding on Members per the <a href="http://www.w3.org/Consortium/Agreement/Member-Agreement">Membership
@@ -109,6 +95,19 @@
       Patent Policy have been designed so that they may evolve independently.</p>
     <p>In the Process Document, the term "participant" refers to an individual,
       not an organization.</p>
+    <h2 class=".notoc">Conformance and specialized terms</h2>
+    <p>The terms <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>,
+      <em class="rfc2119">should</em>, <em class="rfc2119">should not</em>, <em
+        class="rfc2119">required</em>, and <em class="rfc2119">may</em> are
+      used in accordance with <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC
+        2119</a> [<a href="#ref-RFC2119">RFC2119</a>]. The term <dfn><em class="rfc2119">not
+          required</em></dfn> is equivalent to the term <em class="rfc2119">may</em>
+      as defined in RFC 2119.&nbsp;</p>
+    <p>Some terms have been capitalized in this document (and in other W3C
+      materials) to indicate that they are entities with special relevance to
+      the W3C Process. These terms are defined herein, and readers should be
+      aware that the ordinary (English) definitions are incomplete for purposes
+      of understanding this document.&nbsp;</p>
     <div class="toc" role="navigation">
       <h2 class="notoc"><a id="toc">Table of Contents</a></h2>
       <div class="noprint">
@@ -400,34 +399,22 @@
       <p>Here is a general overview of how W3C standardizes a Web technology. In
         many cases, the goal of this work is a <a href="#RecsW3C">W3C
           Recommendation</a>, the W3C equivalent of a Web standard.</p>
-      <p class="issue">The following text assumes Activities exist, and is
-        related to an old piece of work that many people don't know.</p>
-      <ol class="issue">
+      <ol>
         <li>People generate interest in a particular topic (e.g., Web services).
           For instance, Members express interest in the form of <a href="#Submission">Member
             Submissions</a>, and the <a href="#Team">Team</a> monitors work
           inside and outside of W3C for signs of interest. Also, W3C is likely
           to organize a <a href="#GAEvents">Workshop</a> to bring people
-          together to discuss topics that interest the W3C community. This was
-          the case, for example, with Web services.</li>
+          together to discuss topics that interest the W3C community.</li>
         <li>When there is enough interest in a topic (e.g., after a successful
           Workshop and/or discussion on an <a href="#ACCommunication">Advisory
             Committee mailing list</a>), the Director announces the <a href="#ActivityDevelopment">development
-            of a proposal for a new</a> or <a href="#WGCharterDevelopment">Working
-            Group charter</a>, depending on the breadth of the topic of
-          interest. An <a href="#ActivityProposal">Activity Proposal</a>
-          describes the scope, duration, and other characteristics of the
-          intended work, and includes the charters of one or more <a href="#GAGeneral">Working
-            Groups, Interest Groups, and possibly Coordination Groups</a> to
-          carry out the work. W3C Members <a href="#ActivityCreation">review
-            each Activity Proposal</a> and the associated Working Group
+            of a proposal for one or more new</a> or Interest Group or <a href="#WGCharterDevelopment">Working
+            Group charter</a>, depending on the breadth of the topic of interest.
+          W3C Members <a href="#ActivityCreation">review</a> the proposed
           charters. When there is support within W3C for investing resources in
-          the topic of interest, the Director approves the new Activity and
-          groups get down to work. For the Web Services Activity, the initial
-          Activity Proposal called for one Working Group to work on Web Services
-          Architecture and one to work on a language for Web Services
-          Description. The Activity Proposal also incorporated an existing
-          Working Group (from another Activity) working on XML Protocols.</li>
+          the topic of interest, the Director approves the group(s) and they
+          begin their work.</li>
         <li>There are three types of Working Group participants: <a href="#member-rep">Member
             representatives</a>, <a href="#invited-expert-wg">Invited Experts</a>,
           and <a href="#Team">Team representatives</a>. Team representatives
@@ -1322,8 +1309,7 @@ Patent
               Agreement</a> [<a href="#ref-member-agreement">PUB6</a>]) and
             documentation of any legal commitments W3C has with other entities.</li>
           <li>The Process Document.</li>
-          <li>Public results of W3C activities <span class="issue">Working
-              group/IG documents, mailing lists, what?</span> and <a href="#GAEvents">Workshops</a>.</li>
+          <li>Public results of W3C activities and <a href="#GAEvents">Workshops</a>.</li>
         </ul>
         <p>To keep the Members abreast of W3C meetings, Workshops, and review
           deadlines, the Team provides them with a regular (e.g., weekly) news
@@ -1849,7 +1835,9 @@ Group
           to the Advisory Committee.</p>
         <p>Closing a Working Group has implications with respect to the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
             Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>].</p>
-        <h3>6.3 <a id="GroupsCG">Coordination Groups</a></h3>
+        <h3>6.3 <a id="GroupsCG">Coordination Groups&nbsp;<span class="issue">
+              <a href="https://www.w3.org/community/w3process/track/issues/129">ISSUE-129</a>
+              proposes to remove the separate definition of Coordination Groups.</span></a></h3>
         <p>W3C activities interact in many ways. There are dependencies between
           groups within the same area, in different areas, and between W3C
           activities and the activities of other organizations. Examples of
@@ -1882,16 +1870,7 @@ Group
         <h4>6.3.2 <a id="CGCreation">Coordination Group Creation and Closure</a></h4>
         <p>The Director creates or modifies a Coordination Group by sending the
           <a href="#CGCharter">Coordination Group charter</a> to the Advisory
-          Committee. A Coordination Group <span class="rfc2119">MAY</span> be
-          created as part of an <a href="#ActivityProposal">Activity Proposal</a>
-          (for example to coordinate other groups in the Activity or to draw up
-          charters of future groups), or during the life of an Activity when
-          dependencies arise. A Coordination Group <span class="rfc2119">MAY</span>
-          operate as part of several W3C Activities. <span class="issue">What
-            to do with this? <a href="https://www.w3.org/community/w3process/track/issues/129">ISSUE-129</a>
-            already proposes to remove Coordination Groups. Otherwise, we'll
-            need to explain them without Activities (which is just editorial
-            work) </span></p>
+          Committee.&nbsp;</p>
         <p>A Coordination Group <span class="rfc2119">SHOULD</span> close when
           there is no longer a perceived need for coordination.</p>
         <h4>6.3.3 <a id="CGCharter">Coordination Group Charters</a></h4>
@@ -2997,9 +2976,8 @@ Process
         request).</p>
       <p>After acknowledgment, the Submitter(s) <span class="rfc2119">MUST NOT</span>,
         <strong>under any circumstances</strong>, imply W3C investment in the
-        Member Submission until, and unless, the material has been adopted as
-        part of a W3C <a href="#def-Activity">Activity</a>. <span class="issue">Working
-          Group?</span></p>
+        Member Submission until, and unless, the material has been adopted as a
+        deliverable of a W3C Working Group</p>
       <h4>11.1.1 <a id="SubmissionScope">Scope of Member Submissions</a></h4>
       <p>When a technology overlaps in scope with the work of a chartered
         Working Group, Members <span class="rfc2119">SHOULD</span> <a href="#group-participation">participate
