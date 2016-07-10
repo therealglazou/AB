@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
     <meta name="keywords" content="W3C, World Wide Web, WWW, Consortium, process, Team, Recommendation, Advisory Committee,
 Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity, Workshop, Symposium, charter, Activity Proposal,Working Draft, Process Document, Candidate Recommendation, Director, Proposed Recommendation, Last Call, Submission request">
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/base.css">
@@ -19,7 +19,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
   <body>
     <div class="head"><a href="http://www.w3.org/"><img alt="W3C" src="https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
       <h1>W3C Draft Process Document</h1>
-      <h2 class="notoc">23 April 2015 Editor's Draft</h2>
+      <h2 class="notoc">10 July 2016 Editor's Draft</h2>
       <dl>
         <dt>Latest Editor's version:</dt>
         <dd> <a href="https://dvcs.w3.org/hg/AB/raw-file/default/cover.html">https://dvcs.w3.org/hg/AB/raw-file/default/cover.html</a></dd>
@@ -31,7 +31,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <dt>Previous editor:</dt>
         <dd>Ian Jacobs, <a href="http://www.w3.org/">W3C</a></dd>
       </dl>
-      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 1996-2015 <a href="/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 1996-2016 <a href="/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr
             title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>,
         <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
@@ -1566,6 +1566,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <li><em class="rfc2119">may</em> be republished as an <a href="#rec-modify">(Edited) Recommendation</a>, or</li>
         <li><em class="rfc2119">may</em> be <a href="#rec-rescind">rescinded</a>.</li>
       </ul>
+
       <h3 id="rec-modify">6.7 Modifying a W3C Recommendation</h3>
       <p>This section details the management of errors in, and the process for making changes to a Recommendation. Please see also the <a href="http://www.w3.org/2003/01/republishing/">Requirements
           for modification of W3C Technical Reports</a> [<a href="#in-place-tr-mod">PUB35</a>].</p>
@@ -1683,48 +1684,73 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       </ul>
       <p>The <a href="http://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>] does not
         specify any licensing requirements or commitments for Working Group Notes.</p>
-      <h3 id="rec-rescind">6.9 Rescinding a W3C Recommendation</h3>
-      <p>W3C <em class="rfc2119">may</em> rescind a Recommendation, for example if the Recommendation contains many errors that conflict
-        with a later version or if W3C discovers burdensome patent claims that affect implementers and cannot be resolved; see the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C
-          Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>] and in particular <a href="http://www.w3.org/Consortium/Patent-Policy#sec-Requirements">section
-          5</a> (bullet 10) and <a href="http://www.w3.org/Consortium/Patent-Policy#sec-PAG-conclude">section 7.5</a>. A Working Group <em
-          class="rfc2119">may</em> request the Director to rescind a Recommendation which was a deliverable, or the Director <em class="rfc2119">may</em>
-        directly propose to rescind a Recommendation. </p>
-      <p>W3C only rescinds entire specifications. To rescind some <em>part</em> of a Recommendation, W3C follows the process for <a href="#rec-modify">modifying
-          a Recommendation</a>.</p>
-      <p>Once W3C has published a Rescinded Recommendation, future W3C technical reports <em class="rfc2119">must not</em> include
-        normative references to that technical report.</p>
-      <p id="proposed-rescinded-rec">To propose rescinding a W3C Recommendation, a Working Group or the Director</p>
+
+      <h3 id="rec-rescind">6.9 Obsoleting or Rescinding a W3C Recommendation</h3>
+
+      <p>W3C <em class="rfc2119">may</em> rescind a Recommendation, for example if the Recommendation contains many
+        errors that conflict with a later version, or if W3C discovers burdensome patent claims that affect implementers
+        and cannot be resolved; see the <a href="http://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a>
+        [<a href="#ref-patentpolicy">PUB33</a>] and in particular
+        <a href="http://www.w3.org/Consortium/Patent-Policy#sec-Requirements">section 5</a> (bullet 10) and
+        <a href="http://www.w3.org/Consortium/Patent-Policy#sec-PAG-conclude">section 7.5</a>.</p>
+
+      <p>W3C may obsolete a Recommendation, for example if the W3C Community decides that the Recommendation
+        no longer represents best practices, or is not adopted and is unlikely to be adopted.</p>
+
+      <p>W3C only rescnds or obsoletes entire Recommendations. To rescind or obsolete some part of a Recommendation,
+        W3C follows the process for <a href="#rec-modify">modifying a Recommendation</a>.</p>
+
+      <p>The director <em class="rfc2119">may</em> Recommend obsoleting or rescinding a recommendation. The director
+        <em class="rfc2119">must</em> begin a review of a proposal to obsolete or rescind a recommendation when requested
+        to do so by any of the following:</p>
+
       <ul>
-        <li><em class="rfc2119">must</em> publish rationale for rescinding the Recommendation.</li>
-        <li><em class="rfc2119">should</em> document known implementation.</li>
+        <li>The Working Group who produced, or is chartered to maintain, the Recommendation.</li>
+        <li>The TAG, if there is no such Working Group</li>
+        <li>Any individual who made a request to the relevant Working Group as described above, or the TAG if such a group
+          does not exist, to consider a Recommendation for obsoletion or rescindment, whose request was not answered
+          within 90 days</li>
+        <li>5% of the members of the Advisory Committee</li>
       </ul>
-      <p>In addition a Working Group requesting to rescind a Recommendation</p>
+
+      <p id="proposed-rescinded-rec">For any review of a proposal to obsolete or rescind a Recommendation the Director
+        <em class="">must</em>:</p>
+
       <ul>
-        <li><em class="rfc2119">must</em> show that the request to rescind has received <a href="#wide-review">wide review</a></li>
+        <li>Announce the proposal to all Working Group Chairs, and to the Public.</li>
+        <li>indicate that this is a Proposal to Rescind, or a proposal to Obsolete, a Recommendation</li>
+        <li>identify the Recommendation by URL.</li>
+        <li>publish a rationale for rescinding the Recommendation.</li>
+        <li>identify known dependencies and solicit review from all dependent Working Groups</li>
+        <li>solicit public review</li>
+        <li>specify the deadline for review comments, which must be at least four weeks after the Director's announcement</li>
       </ul>
-      <p>In addition the Director, if proposing to rescind a Recommendation</p>
+
+      <p>and <em class="rfc2119">should</em></p>
+
       <ul>
-        <li><em class="rfc2119">must</em> show that the request to rescind is based on public comment</li>
+        <li>identify known implementation</li>
       </ul>
-      <p>The Director <em class="rfc2119">must</em> announce the proposal to rescind a W3C Recommendation to other W3C groups, the public,
-        and the <a href="#AC">Advisory Committee</a>. The announcement <em class="rfc2119">must</em>:</p>
-      <ul>
-        <li>indicate that this is a Proposal to Rescind a Recommendation</li>
-        <li>specify the deadline for review comments, which <em class="rfc2119">must</em> be at least <span class="time-interval">four
-            weeks after announcing</span> the proposal to rescind.</li>
-        <li>identify known dependencies and solicit review from all dependent Working Groups;</li>
-        <li>solicit public review.</li>
-      </ul>
-      <p>If there was any <a href="#def-Dissent" rel="glossary" title="Definition of Dissent"><span class="dfn-instance">dissent</span></a>
-        in Advisory Committee reviews, the Director <em class="rfc2119">must</em> publish the substantive content of the dissent to W3C <strong>and
-          the public</strong>, and <em class="rfc2119">must</em> <a href="#formal-address">formally address</a> the comment at least 14
-        days before publication as a Rescinded Recommendation. In this case the <a href="#AC">Advisory Committee</a> <em class="rfc2119">may</em>
-        <a href="#ACAppeal">appeal</a> the decision.</p>
-      <p> A Rescinded Recommendation <em class="rfc2119">must</em> be published with up to date status. The updated version <em class="rfc2119">may</em>
-        remove the rescinded content (i.e. the main body of the document).</p>
+
+      <p>If there was any <a href="#def-Dissent" rel="glossary"><span class="dfn-instance">dissent</span></a>
+        in Advisory Committee reviews, the Director <em class="rfc2119">must</em> publish the substantive content of
+        the dissent to W3C <strong>and the public</strong>, and <em class="rfc2119">must</em>
+        <a href="#formal-address">formally address</a> the dissent at least 14 days before publication as an
+        Obsolete or Rescinded Recommendation.</p> 
+
+      <p>The <a href="#AC">Advisory Committee</a> <em class="rfc2119">may</em> <a href="#ACAppeal">appeal</a> the
+        Director's decision.</p>
+
+      <p>An Obsolete or Rescinded Recommendation <em class="rfc2119">must</em> be published with up to date status.
+        The updated version <em class="rfc2119">may</em> remove the main body of the document. The Status of this Document section
+        <em class="rfc2119">should</em> link to an explanation of the Obsolete or Rescinded status as appropriate.</p>
+
+      <p>Once W3C has published a Rescinded Recommendation, future W3C technical reports
+        <em class="rfc2119">must not</em> include normative references to that technical report.</p>
+
       <p><span style="font-weight: bold;">Note:</span> the original Recommendation document will continue to be available at its
         version-specific URL.</p>
+
       <h3 id="further-reading">Further reading</h3>
       <p>Refer to <a href="http://www.w3.org/2003/05/Transitions">"How to Organize a Recommendation Track Transition"</a> in the <a href="http://www.w3.org/Guide/">Member
           guide</a> for practical information about preparing for the reviews and announcements of the various steps, and <a href="http://www.w3.org/2002/05/rec-tips">tips
@@ -2092,24 +2118,24 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
           February 2000.</dd>
       </dl>
       <h2 id="acks">13 Acknowledgments</h2>
-      <p>The following individuals have contributed to this proposal for a revised Process: Daniel Appelquist (Telefonica), Art Barstow
-        (Nokia, unaffiliated), Robin Berjon (W3C), Judy Brewer (W3C), Marcos Cáceres (Mozilla), Wayne Carr (Intel), Michael Champion (W3C),
-        Mark Crawford (SAP), Karl Dubost (Mozilla), Fantasai (unaffiliated), Virginie Galindo (Gemalto), Daniel Glazman (Disruptive
-        Innovations), Eduardo Gutentag (unaffiiliated), Brad Hill (Facebook), Jeff Jaffe (W3C), Cullen Jennings (Cisco), Brain Kardell
-        (JQuery), Peter Linss (HP), Nigel Megitt (BBC), Olle Olsson (SICS), Natasha Rooney (GSMA), Sam Ruby (IBM), David Singer (Apple),
-        Henri Sivonen (Mozilla), Josh Soref (BlackBerry), Anne van Kesteren (Mozilla), Léonie Watson (The Paciello Group), Mike West
-        (Google), Chris Wilson (Google), Steve Zilles (Adobe).</p>
+      <p>The following individuals have contributed to this proposal for a revised Process: J Alan Bird (W3C), Wayne Carr (Intel),
+        Tantek Çelik (Mozilla), Michael Champion (W3C), Geoffrey Creighton (Microsoft), Virginie Galindo (Gemalto),
+        Daniel Glazman (Disruptive Innovations), Michael Geldblum (), Jeff Jaffe (W3C), Wendy Seltzer (W3C),
+        David Singer (Apple), 
+        Léonie Watson (The Paciello Group), Chris Wilson (Google), Helene Workman (Apple), Judy Zhu 茱滴 (Alibaba), Steve Zilles (Adobe).</p>
+
       <p>The following individuals contributed to the development of earlier versions of the Process: Jean-François Abramatic (IBM, and
-        previously ILOG and W3C), Dan Appelquist (Telefonica), Art Barstow (Nokia), Ann Bassetti (The Boeing Company), Jim Bell (HP), Robin
-        Berjon (W3C), Tim Berners-Lee (W3C), Klaus Birkenbihl (Fraunhofer Gesellschaft), Don Brutzman (Web3D), Carl Cargill (Netscape, Sun
+        previously ILOG and W3C), Dan Appelquist (Telefonica), Art Barstow (Nokia, unaffiliated), Ann Bassetti (The Boeing Company), Jim Bell (HP), Robin
+        Berjon (W3C), Tim Berners-Lee (W3C), Klaus Birkenbihl (Fraunhofer Gesellschaft), Judy Brewer (W3C), Don Brutzman (Web3D), Carl Cargill (Netscape, Sun
         Microsystems), Wayne Carr (Intel), Marcos Cáceres (Mozilla), Michael Champion (Microsoft), Paul Cotton (Microsoft), Mark Crawford
-        (SAP), Tantek Çelik (Mozilla), Don Deutsch (Oracle), David Fallside (IBM), Fantasai (Mozilla), Wendy Fong (Hewlett-Packard),
+        (SAP), Tantek Çelik (Mozilla), Don Deutsch (Oracle), Karl Dubost (Mozilla), David Fallside (IBM), Fantasai (Mozilla), Wendy Fong (Hewlett-Packard),
         Virginie Galindo (Gemalto), Daniel Glazman (Disruptive Innovations), Paul Grosso (Arbortext), Eduardo Gutentag (Sun Microsystems),
-        Joe Hall (CDT), Ivan Herman (W3C), Ian Hickson (Google), Steve Holbrook (IBM), Renato Iannella (IPR Systems), Ian Jacobs (W3C), Jeff
-        Jaffe (W3C), Cullen Jennings (Cisco), Sally Khudairi (W3C), John Klensin (MCI), Tim Krauskopf (Spyglass), Kari Laihonen (Ericsson),
-        Ken Laskey (MITRE), Ora Lassila (Nokia), Håkon Wium Lie (Opera Software), Chris Lilley (W3C), Bede McCall (MITRE), Giri Mandyam
-        (Qualcomm), Larry Masinter (Adobe Systems), Qiuling Pan (Huawei), TV Raman (Google), Thomas Reardon (Microsoft), Claus von Riegen
-        (SAP AG), David Singer (Apple), David Singer (IBM), Ralph Swick (W3C), Anne van Kesteren, Jean-Charles Verdié (MStar), Chris Wilson
+        Joe Hall (CDT), Ivan Herman (W3C), Ian Hickson (Google), Brad Hill (Facebook), Steve Holbrook (IBM), Renato Iannella (IPR Systems), Ian Jacobs (W3C), Jeff
+        Jaffe (W3C), Cullen Jennings (Cisco), Brain Kardell (JQuery), Sally Khudairi (W3C), John Klensin (MCI), Tim Krauskopf (Spyglass), Kari Laihonen (Ericsson),
+        Ken Laskey (MITRE), Ora Lassila (Nokia), Håkon Wium Lie (Opera Software), Chris Lilley (W3C), Peter Linss (HP), Bede McCall (MITRE), Giri Mandyam
+        (Qualcomm), Larry Masinter (Adobe Systems), Nigel Megitt (BBC), Olle Olsson (SICS), Qiuling Pan (Huawei), TV Raman (Google), Thomas Reardon (Microsoft), Claus von Riegen
+        (SAP AG), Natasha Rooney (GSMA), Sam Ruby (IBM), David Singer (Apple), David Singer (IBM), Henri Sivonen (Mozilla), Josh Soref (BlackBerry), Ralph Swick (W3C), Anne van Kesteren, Jean-Charles Verdié (MStar), Mike West
+        (Google),  Chris Wilson
         (Google), Lauren Wood (unaffiliated), and Steve Zilles (Adobe Systems).</p>
       <h2 id="changes">14 Changes</h2>
       <p>This document is based on 1 August 2014 Process. <a href="https://dvcs.w3.org/hg/AB/">Detailed change logs</a> are available.</p>
@@ -2146,6 +2172,5 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <li>Remove <a id="good-standing">6.2.1.7</a> Good Standing in a Working Group</li>
       </ul>
     </main>
-    <em class="rfc2119"><em class="rfc2119"> </em></em>
   </body>
 </html>
