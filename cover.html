@@ -19,7 +19,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
   <body>
     <div class="head"><a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
       <h1>W3C Editor's Draft Process Document</h1>
-      <h2 class="notoc">18 July 2016 Editor's Draft</h2>
+      <h2 class="notoc">28 July 2016 Editor's Draft</h2>
       <dl>
         <dt>Latest Editor's version:</dt>
         <dd> <a href="https://dvcs.w3.org/hg/AB/raw-file/default/cover.html">https://dvcs.w3.org/hg/AB/raw-file/default/cover.html</a></dd>
@@ -63,7 +63,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       <a href="https://www.w3.org/Consortium/Process/">most recent operative Process Document</a> announced to the Membership.</p>
 
     <p>This document is developed by the Advisory Board's Process Task Force (which anyone may join) working within the
-      <a href="https://www.w3.org/community/w3process/">Revising W3C Process Community Group</a>. This is the 18 July 2016
+      <a href="https://www.w3.org/community/w3process/">Revising W3C Process Community Group</a>. This is the 28 July 2016
       Editor's draft for the proposed next version of the W3C Process Document. This document is based on the 1 September 2015
       Process.</p>
 
@@ -71,11 +71,16 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       AC review on whether to adopt this as the new operative Process document.
       Further revision to the Process is expected as needed.</p>
 
-    <p>This draft makes editorial changes to clarify the status of an Obsolete Recommendation with respect to the Patent Policy
-      and clarify the requirements when a charter continues work on a document that has previously had an Exclusion Opportunity
-      according to the Patent Policy.</p>
+    <p>This draft makes further editorial changes to clarify:</p>
+    <ul>
+      <li>Rights and obligations of members who are themselves Consortia or have members: "Member Consortia"</li>
+      <li>The voting mechanism for Advisory Board and TAG elections</li>
+      <li>The process for marking an Obsolete Recommendation as no longer Obsolete</li>
+      <li>Requirements when a charter continues work on a document that has already been published as a Reference Draft
+        or Candidate Recommendation.</li>
+    </ul>
 
-    <p>A <a href="#changes">change history</a> nased on the 1 September 2015 Process Document is part of this draft.</p>
+    <p>A <a href="#changes">change history</a> based on the 1 September 2015 Process Document is provided.</p>
 
     <p>Comment is invited on the draft. Please send comments to
       <a href="mailto:public-w3process@w3.org">public-w3process@w3.org</a>
@@ -85,18 +90,20 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
      <a href="https://dvcs.w3.org/hg/AB/">detailed changelogs</a> are available online. </p>
 
     <h2 class="notoc" id="pp">Relation of Process Document to Patent Policy</h2>
-    <p>W3C Members' attention is called to the fact that provisions of the Process Document are binding on Members per the <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership
-        Agreement</a> [<a href="#ref-member-agreement">PUB6</a>]. The Patent Policy <a href="https://www.w3.org/Consortium/Patent-Policy">W3C
-        Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>] is incorporated by normative reference as a part of the Process Document,
-      and is thus equally binding.</p>
+    <p>W3C Members' attention is called to the fact that provisions of the Process Document are binding on Members per the
+      <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership Agreement</a>
+      [<a href="#ref-member-agreement">PUB6</a>]. The Patent Policy
+      <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]
+      is incorporated by normative reference as a part of the Process Document, and is thus equally binding.</p>
     <p>The Patent Policy places additional obligations on Members, Team, and other participants in W3C. The Process Document does not
       restate those requirements but includes references to them. The Process Document and Patent Policy have been designed so that they may
       evolve independently.</p>
     <p>In the Process Document, the term "participant" refers to an individual, not an organization.</p>
     <h2 class=".notoc">Conformance and specialized terms</h2>
-    <p>The terms <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">should</em>, <em class="rfc2119">should
-        not</em>, <em class="rfc2119">required</em>, and <em class="rfc2119">may</em> are used in accordance with <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC
-        2119</a> [<a href="#ref-RFC2119">RFC2119</a>]. The term <dfn><em class="rfc2119">not required</em></dfn> is equivalent to the term
+    <p>The terms <em class="rfc2119">must</em>, <em class="rfc2119">must not</em>, <em class="rfc2119">should</em>,
+      <em class="rfc2119">should not</em>, <em class="rfc2119">required</em>, and <em class="rfc2119">may</em> are used
+      in accordance with <a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a> [<a href="#ref-RFC2119">RFC2119</a>].
+      The term <dfn><em class="rfc2119">not required</em></dfn> is equivalent to the term
       <em class="rfc2119">may</em> as defined in [<a href="#ref-RFC2119">RFC2119</a>].</p>
     <p>Some terms have been capitalized in this document (and in other W3C materials) to indicate that they are entities with special
       relevance to the W3C Process. These terms are defined herein, and readers should be aware that the ordinary (English) definitions are
@@ -134,7 +141,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
             <li class="tocline3"><a href="#Members">2.1 Members</a>
               <ul class="toc">
                 <li class="tocline4"><a href="#MemberBenefits">2.1.1 Rights of Members</a></li>
-                <li class="tocline4"><a href="#MemberRelated">2.1.2 Related Members</a></li>
+                <li class="tocline4"><a href="#RelatedAndConsortiumMembers">2.1.2 Member Consortia, and Related Members</a></li>
                 <li class="tocline4"><a href="#AC">2.1.3 Advisory Committee (AC)</a></li>
               </ul>
             </li>
@@ -309,8 +316,8 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         and public. W3C
         processes promote fairness, responsiveness, and progress: all facets of the W3C mission. This document describes the processes W3C
         follows in pursuit of its mission.</p>
-      <p>Here is a general overview of how W3C standardizes a Web technology. In many cases, the goal of this work is a <a href="#RecsW3C">W3C
-          Recommendation</a>, the W3C equivalent of a Web standard.</p>
+      <p>Here is a general overview of how W3C standardizes a Web technology. In many cases, the goal of this work is a
+        <a href="#RecsW3C">W3C Recommendation</a>, the W3C equivalent of a Web standard.</p>
 
       <ol>
         <li>People generate interest in a particular topic (e.g., Web services). For instance, Members express interest in the form 
@@ -409,29 +416,6 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <li>On the Team, as <a href="#fellows">W3C Fellows</a>.</li>
       </ul>
 
-      <p>If the Member is itself a consortium, user society, or otherwise has members or sponsors, as described in paragraph 5g of
-        the <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership Agreement</a>), the rights and privileges
-        of W3C Membership granted by W3C Process extend to the the organization's paid staff and Advisory Committee.</p>
-
-      <p>Such an organization <em class="rfc2119">may</em> also designate up to four (or more at the Team's discretion) individuals
-        who, though not employed by the organization, <em class="rfc2119">may</em> exercise the rights of
-        <a href="#member-rep">Member representatives</a>.
-
-      <p>For Consortia who have individual persons as members these individuals <em class="rfc2119">must</em> disclose their
-        employment affiliation when participating in W3C work. Provisions for <a href="#MemberRelated">related Members</a> apply. 
-        Furthermore, these individuals <em class="rfc2119">must</em> represent the broad interests of the W3C Member organization
-        and not the particular interests of their employers.</p>
-
-      <p>For Consortia who have organizations as Members, all such designated representatives must be an official representative
-        of the Member organization (i.e. a Committee or Task Force Chairperson) and <em class="rfc2119">must</em> disclose their
-        employment affiliation when participating in W3C work. Provisions for <a href="#MemberRelated">related Members</a> apply. 
-        Furthermore, these individuals <em class="rfc2119">must</em> represent the broad interests of the W3C Member organization
-        and not the particular interests of their employers.</p>
-
-      <p>For all representatives of a Member that is a Consortium, as described in the preceeding two paragraphs, any IPR
-        contributions are only those of the individual person or Consortium they are representing as no IPR commitments have been
-        granted by the individuals' employers.</p>
-
       <p>The rights and benefits of W3C membership are contingent upon conformance to the processes described in this document.
         The vast majority of W3C Members faithfully follow the spirit as well as the letter of these processes. When serious and/or
         repeated violations do occur, and repeated attempts to address these violations have not resolved the situation, the 
@@ -440,9 +424,35 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <a href="https://www.w3.org/2002/09/discipline">Guidelines for Disciplinary Action</a>
         [<a href="#ref-discipline-gl">MEM14</a>].</p>
 
-      <h4 id="MemberRelated">2.1.2 Related Members</h4>
-      <p>In the interest of ensuring the integrity of the consensus process, Member involvement in some of the processes in this document is
-        affected by related Member status. As used herein, two Members are related if:</p>
+      <h4 id="RelatedAndConsortiumMembers">2.1.2 Membership Consortia and related Members</h4>
+      <h5 id="MemberConsortia">2.1.2.1 Membership Consortia</h5>
+      <p>If the Member is itself a consortium, user society, or otherwise has members or sponsors, as described in paragraph 5g of
+        the <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership Agreement</a> and hereafter called a 
+        "<dfn>Member Consortium</dfn>" the rights and privileges of W3C Membership granted by W3C Process extend to the the
+        organization's paid staff and Advisory Committee representative.</p>
+
+      <p>Member Consortia <em class="rfc2119">may</em> also designate up to four (or more at the Team's discretion) individuals
+        who, though not employed by the organization, <em class="rfc2119">may</em> exercise the rights of
+        <a href="#member-rep">Member representatives</a>.
+
+      <p>For Member Consortia who have individual persons as members these individuals <em class="rfc2119">must</em> disclose their
+        employment affiliation when participating in W3C work. Provisions for <a href="#MemberRelated">related Members</a> apply. 
+        Furthermore, these individuals <em class="rfc2119">must</em> represent the broad interests of the W3C Member organization
+        and not the particular interests of their employers.</p>
+
+      <p>For Member Consortia who have organizations as Members, all such designated representatives must be an
+        official representative of the Member organization (i.e. a Committee or Task Force Chairperson) and
+        <em class="rfc2119">must</em> disclose their employment affiliation when participating in W3C work. Provisions for
+        <a href="#MemberRelated">related Members</a> apply. 
+        Furthermore, these individuals <em class="rfc2119">must</em> represent the broad interests of the W3C Member organization
+        and not the particular interests of their employers.</p>
+
+      <p>For all representatives of a Member Consortium, IPR commitments are made on behalf of the Member Consortium, unless a
+        further IPR commitment is made by the individuals' employers.</p>
+
+      <h5 id="MemberRelated">2.1.2.2 Related Members</h5>
+      <p>In the interest of ensuring the integrity of the consensus process, Member involvement in some of the processes in this
+        document is affected by related Member status. As used herein, two Members are related if:</p>
       <ol>
         <li>Either Member is a subsidiary of the other, or</li>
         <li>Both Members are subsidiaries of a common entity, or</li>
@@ -450,8 +460,9 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       </ol>
       <p>A <em>subsidiary</em> is an organization of which effective control and/or majority ownership rests with another, single
         organization.</p>
-      <p>Related Members <em class="rfc2119">must</em> disclose these relationships according to the mechanisms described in the <a href="https://www.w3.org/Member/Intro">New
-          Member Orientation</a> [<a href="#ref-new-member">MEM4</a>].</p>
+      <p>Related Members <em class="rfc2119">must</em> disclose these relationships according to the mechanisms described in the
+        <a href="https://www.w3.org/Member/Intro">New Member Orientation</a> [<a href="#ref-new-member">MEM4</a>].</p>
+
       <h4 id="AC">2.1.3 Advisory Committee (AC)</h4>
       <p>When an organization joins W3C (see "<a href="https://www.w3.org/Consortium/join">How to Join W3C</a>" [<a href="#ref-join-w3c">PUB5</a>]),
         it <em class="rfc2119">must</em> name its Advisory Committee representative as part of the Membership Agreement. The <a href="https://www.w3.org/Member/Intro">New
@@ -474,6 +485,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       <p>An Advisory Committee representative <em class="rfc2119">may</em> request that additional individuals from their organization be
         subscribed to these lists. Failure to contain distribution internally <em class="rfc2119">may</em> result in suspension of
         additional email addresses, at the discretion of the Team.</p>
+
       <h5 id="ACMeetings">2.1.3.2 Advisory Committee Meetings</h5>
       <p>The Team organizes a <a href="#ftf-meeting">face-to-face meeting</a> for the Advisory Committee <span class="time-interval">twice
           a year</span>. The Team appoints the Chair of these meetings (generally the CEO). At each Advisory
@@ -639,10 +651,10 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       <h4 id="AB-TAG-elections">2.5.2 Advisory Board and Technical Architecture Group Elections</h4>
 
       <p>The Advisory Board and a portion of the Technical Architecture Group are elected by the Advisory Committee, using a
-        single transferable vote. An election begins when the Team sends a Call for Nominations to the Advisory Committee. Any Call
-        for Nominations specifies the number of available seats, the deadline for nominations, details about the vote tabulation
-        system selected by the Team for the election, and operational information. The Team may modify the tabulation system after
-        the Call for Nominations but must stabilize it no later than the Call for Votes. The Director
+        Single Transferable Vote system. An election begins when the Team sends a Call for Nominations to the Advisory Committee.
+        Any Call for Nominations specifies the number of available seats, the deadline for nominations, details about the
+        specific vote tabulation system selected by the Team for the election, and operational information. The Team may modify the 
+        tabulation system after the Call for Nominations but must stabilize it no later than the Call for Votes. The Director
         <em class="rfc2119">should</em> announce appointments no later than the start of a nomination period as part of the Call 
         for Nominations.</p>
 
@@ -678,8 +690,8 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         announces the results to the Advisory Committee. In case of a tie the
         <a href="#random">verifiable random selection procedure</a> described below will be used to fill the available seats.</p>
 
-      <p id="short-term">The shortest term is assigned to the elected candidate who received the least support, the next shortest
-        term to the elected candidate who received the next least support, and so on. In the case of a tie among those eligible for
+      <p id="short-term">The shortest term is assigned to the elected candidate ranked lowest by the tabulation of votes, the
+        next shortest term to the next-lowest ranked elected candidate, and so on. In the case of a tie among those eligible for
         a short term, the <a href="#random">verifiable random selection procedure</a> described below will be used to assign the
         short term.</p>
 
@@ -910,24 +922,29 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <li>The <a href="#Team">Team</a> is considered an organization.</li>
       </ul>
       <p>Unless the charter states otherwise, <a href="#invited-expert-wg">Invited Experts</a> <em class="rfc2119">may</em> vote.</p>
-      <p>If a participant is unable to attend a vote, that individual <em class="rfc2119">may</em> authorize anyone at the meeting to act
-        as a <dfn id="proxy">proxy</dfn>. The absent participant <em class="rfc2119">must</em> inform the Chair in writing who is acting
-        as proxy, with written instructions on the use of the proxy. For a Working Group or Interest Group, see the related requirements
-        regarding an individual who attends a meeting as a <a href="#mtg-substitute">substitute</a> for a participant.</p>
-      <p>A group <em class="rfc2119">may</em> vote for other purposes than to resolve a substantive issue. For instance, the Chair often
-        conducts a "straw poll" vote as a means of determining whether there is consensus about a potential decision.</p>
+      <p>If a participant is unable to attend a vote, that individual <em class="rfc2119">may</em> authorize anyone at the meeting
+        to act as a <dfn id="proxy">proxy</dfn>. The absent participant <em class="rfc2119">must</em> inform the Chair in writing
+        who is acting as proxy, with written instructions on the use of the proxy. For a Working Group or Interest Group, see the
+        related requirements regarding an individual who attends a meeting as a <a href="#mtg-substitute">substitute</a>
+        for a participant.</p>
+
+      <p>A group <em class="rfc2119">may</em> vote for other purposes than to resolve a substantive issue. For instance, the
+       Chair often
+       conducts a "straw poll" vote as a means of determining whether there is consensus about a potential decision.</p>
       <p>A group <em class="rfc2119">may</em> also vote to make a process decision. For example, it is appropriate to decide by simple
         majority whether to hold a meeting in San Francisco or San Jose (there's not much difference geographically). When simple majority
         votes are used to decide minor issues, the minority are <em class="rfc2119">not required</em> to state the reasons for their
         dissent, and the group is <em class="rfc2119">not required</em> to record individual votes.</p>
       <p>A group charter <em class="rfc2119">should</em> include formal voting procedures (e.g., quorum or threshold requirements) for
         making decisions about substantive issues.</p>
+
       <p>Procedures for <a href="#ACVotes">Advisory Committee votes</a> are described separately.</p>
 
       <h3 id="WGAppeals">3.5 Appeal of a Chair's Decision</h3>
 
       <p>Groups resolve issues through dialog. Individuals who disagree strongly with a decision <em class="rfc2119">should</em>
-        register with the Chair any <a href="#FormalObjection">Formal Objections</a> (e.g., to a decision made as the result of a <a href="#Votes">vote</a>).</p>
+        register with the Chair any <a href="#FormalObjection">Formal Objections</a> (e.g., to a decision made as the result of a
+        <a href="#Votes">vote</a>).</p>
 
       <p>When group participants believe that their concerns are not being duly considered by the group, they
         <em class="rfc2119">may</em> ask the <a href="#def-Director">Director</a> (for representatives of a Member organization,
@@ -936,16 +953,18 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <a href="#TeamContact">Team Contact</a>. The Team Contact <em class="rfc2119">must</em> inform the Director when a group
         participant has raised concerns about due process.</p>
 
-      <p>Any requests to the Director to confirm a decision <em class="rfc2119">must</em> include a summary of the issue (whether technical
-        or procedural), decision, and rationale for the objection. All counter-arguments, rationales, and decisions <em class="rfc2119">must</em>
-        be recorded.</p>
+      <p>Any requests to the Director to confirm a decision <em class="rfc2119">must</em> include a summary of the issue
+       (whether technical or procedural), decision, and rationale for the objection. All counter-arguments, rationales,
+       and decisions <em class="rfc2119">must</em> be recorded.</p>
       <p>Procedures for <a href="#ACAppeal">Advisory Committee appeals</a> are described separately.</p>
+
       <h3 id="resignation">3.6 Resignation from a Group</h3>
       <p>A W3C Member or Invited Expert <em class="rfc2119">may</em> resign from a group. On written notification from an Advisory
-        Committee representative or Invited Expert to the team, the Member and their representatives or the Invited Expert will be deemed to
-        have resigned from the relevant group. See section 4.2. of the <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent
-          Policy</a> [<a href="#ref-patentpolicy">PUB33</a>] for information about obligations remaining after resignation from certain
-        groups.</p>
+        Committee representative or Invited Expert to the team, the Member and their representatives or the Invited Expert will
+        be deemed to have resigned from the relevant group. See section 4.2. of the
+        <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]
+        for information about obligations remaining after resignation from certain groups.</p>
+
       <section id="chapterDissemination">
         <h2 id="dissemination">4 Dissemination Policies</h2>
         <p>The Team is responsible for managing communication within W3C and with the general public (e.g., news services, press releases,
@@ -954,18 +973,23 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <p>The Team makes every effort to ensure the persistence and availability of the following public information:</p>
         <ul>
           <li><a href="#Reports">W3C technical reports</a> whose publication has been approved by the Director. Per the Membership
-            Agreement, W3C technical reports (and software) are available free of charge to the general public; (refer to the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C
-              Document License</a> [<a href="#ref-doc-license">PUB18</a>]).</li>
-          <li>A <a href="https://www.w3.org/Consortium/mission">mission statement</a> [<a href="#ref-mission">PUB15</a>] that explains the
+            Agreement, W3C technical reports (and software) are available free of charge to the general public;
+            (refer to the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document License</a>
+            [<a href="#ref-doc-license">PUB18</a>]).</li>
+          <li>A <a href="https://www.w3.org/Consortium/mission">mission statement</a> [<a href="#ref-mission">PUB15</a>]
+            that explains the
             purpose and mission of W3C, the key benefits for Members, and the organizational structure of W3C.</li>
-          <li>Legal documents, including the <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership Agreement</a> [<a
-              href="#ref-member-agreement">PUB6</a>]) and documentation of any legal commitments W3C has with other entities.</li>
+          <li>Legal documents, including the
+            <a href="https://www.w3.org/Consortium/Agreement/Member-Agreement">Membership Agreement</a>
+            [<a href="#ref-member-agreement">PUB6</a>]) and documentation of any legal commitments W3C has with other entities.</li>
           <li>The Process Document.</li>
           <li>Public results of W3C activities and <a href="#GAEvents">Workshops</a>.</li>
         </ul>
-        <p>To keep the Members abreast of W3C meetings, Workshops, and review deadlines, the Team provides them with a regular (e.g.,
-          weekly) news service and maintains a <a href="https://www.w3.org/Member/Eventscal">calendar</a> [<a href="#ref-calendar">MEM3</a>]
-          of official W3C events. Members are encouraged to send schedule and event information to the Team for inclusion on this calendar.</p>
+        <p>To keep the Members abreast of W3C meetings, Workshops, and review deadlines, the Team provides them with a regular
+          (e.g., weekly) news service and maintains a <a href="https://www.w3.org/Member/Eventscal">calendar</a>
+          [<a href="#ref-calendar">MEM3</a>] of official W3C events. Members are encouraged to send schedule and event information
+          to the Team for inclusion on this calendar.</p>
+
         <h3 id"confidentiality-levels"="">4.1 Confidentiality Levels</h3>
         <p>There are three principal levels of access to W3C information (on the W3C Web site, in W3C meetings, etc.): public, Member-only,
           and Team-only.</p>
@@ -1102,49 +1126,53 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <p>When the participation requirements exceed <a href="#ig-mail-only">Interest Group mailing list subscription</a>, an individual
           is a Member representative in an Interest Group if all of the following conditions are satisfied:</p>
         <ul>
-          <li>the Advisory Committee representative of the Member in question has designated the individual as an Interest Group
-            participant, and</li>
+          <li>the Advisory Committee representative of the Member in question has designated the individual as an
+            Interest Group participant, and</li>
           <li>the individual qualifies for <a href="#member-rep">Member representation</a>.</li>
         </ul>
-        <p>To designate an individual as a Member representative in an Interest Group, the Advisory Committee representative <em class="rfc2119">must</em>
-          follow the instructions in the <a href="#cfp">Call for Participation</a> and charter.</p>
+        <p>To designate an individual as a Member representative in an Interest Group, the Advisory Committee representative
+          <em class="rfc2119">must</em> follow the instructions in the <a href="#cfp">Call for Participation</a> and charter.</p>
         <p>Member participation in an Interest Group ceases under the same conditions as for a Working Group.</p>
         <h5>5.2.1.3 <dfn id="invited-expert-wg">Invited Expert in a Working Group</dfn></h5>
-        <p>The Chair <em class="rfc2119">may</em> invite an individual with a particular expertise to participate in a Working Group. This
-          individual <em class="rfc2119">may</em> represent an organization in the group (e.g., if acting as a liaison with another
-          organization).</p>
+        <p>The Chair <em class="rfc2119">may</em> invite an individual with a particular expertise to participate in a
+          Working Group. This individual <em class="rfc2119">may</em> represent an organization in the group 
+          (e.g., if acting as a liaison with another organization).</p>
         <p>An individual is an Invited Expert in a Working Group if all of the following conditions are satisfied:</p>
         <ul>
           <li>the Chair has designated the individual as a group participant,</li>
           <li>the Team Contact has agreed with the Chair's choice, and</li>
-          <li>the individual has provided the <a href="#inv-expert-info">information required of an Invited Expert</a> to the Chair and
-            Team Contact.</li>
+          <li>the individual has provided the <a href="#inv-expert-info">information required of an Invited Expert</a> to
+            the Chair and Team Contact.</li>
         </ul>
-        <p>To designate an individual as an Invited Expert in a Working Group, the Chair <em class="rfc2119">must</em> inform the Team
-          Contact and provide rationale for the choice. When the Chair and the Team Contact disagree about a designation, the <a href="#def-Director">Director</a>
-          determines whether the individual will be invited to participate in the Working Group.</p>
-        <p><dfn id="inv-expert-info">To be able to participate in a Working Group as an Invited Expert</dfn>, an individual <em class="rfc2119">must</em>
-          do all of the following:</p>
+        <p>To designate an individual as an Invited Expert in a Working Group, the Chair <em class="rfc2119">must</em>
+          inform the Team Contact and provide rationale for the choice. When the Chair and the Team Contact disagree about
+          a designation, the <a href="#def-Director">Director</a> determines whether the individual will be invited to
+          participate in the Working Group.</p>
+        <p><dfn id="inv-expert-info">To be able to participate in a Working Group as an Invited Expert</dfn>, an individual
+          <em class="rfc2119">must</em> do all of the following:</p>
         <ul>
           <li>identify the organization, if any, the individual represents as a participant in this group,</li>
-          <li>agree to the terms of the <a href="https://www.w3.org/Consortium/Legal/collaborators-agreement">invited expert and
-              collaborators agreement</a> [<a href="#ref-invited-expert">PUB17</a>],</li>
-          <li>accept the participation terms set forth in the charter (including the participation requirements of <a href="https://www.w3.org/Consortium/Patent-Policy#sec-Obligations">section
-              3</a> (especially 3.4) and <a href="https://www.w3.org/Consortium/Patent-Policy#sec-Disclosure">section 6</a> (especially
-            6.10) of the <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]).
-            Indicate a specific charter date or version,</li>
-          <li>disclose whether the individual is an employee of a W3C Member; see the <a href="#coi">conflict of interest policy</a>,</li>
-          <li>provide a statement of who will provide the necessary financial support for the individual's participation (e.g., for travel,
-            telephone calls, and conferences), and</li>
-          <li>if the individual's employer (including a self-employed individual) or the organization the individual represents is not a W3C
-            Member, indicate whether that organization intends to join W3C. If the organization does not intend to join W3C, indicate
-            reasons the individual is aware of for this choice.</li>
+          <li>agree to the terms of the
+            <a href="https://www.w3.org/Consortium/Legal/collaborators-agreement">invited expert and collaborators agreement</a>
+            [<a href="#ref-invited-expert">PUB17</a>],</li>
+          <li>accept the participation terms set forth in the charter (including the participation requirements of
+            <a href="https://www.w3.org/Consortium/Patent-Policy#sec-Obligations">section 3</a> (especially 3.4) and
+            <a href="https://www.w3.org/Consortium/Patent-Policy#sec-Disclosure">section 6</a> (especially 6.10) of the
+            <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]),
+            indicating a specific charter date or version,</li>
+          <li>disclose whether the individual is an employee of a W3C Member; see the
+            <a href="#coi">conflict of interest policy</a>,</li>
+          <li>provide a statement of who will provide the necessary financial support for the individual's participation
+            (e.g., for travel, telephone calls, and conferences), and</li>
+          <li>if the individual's employer (including a self-employed individual) or the organization the individual represents
+            is not a W3C Member, indicate whether that organization intends to join W3C. If the organization does not intend to
+            join W3C, indicate reasons the individual is aware of for this choice.</li>
         </ul>
-        <p>The Chair <em class="rfc2119">should not</em> designate as an Invited Expert in a Working Group an individual who is an employee
-          of a W3C Member. The Chair <em class="rfc2119">must not</em> use Invited Expert status to circumvent participation limits imposed
-          by the <a href="#WGCharter">charter</a>.</p>
-        <p>An Invited Expert participates in a Working Group from the moment the individual joins the group until any of the following
-          occurs:</p>
+        <p>The Chair <em class="rfc2119">should not</em> designate as an Invited Expert in a Working Group an individual who is an
+          employee of a W3C Member. The Chair <em class="rfc2119">must not</em> use Invited Expert status to circumvent
+          participation limits imposed by the <a href="#WGCharter">charter</a>.</p>
+        <p>An Invited Expert participates in a Working Group from the moment the individual joins the group until any of
+          the following occurs:</p>
         <ul>
           <li>the group closes, or</li>
           <li>the Chair or Director withdraws the invitation to participate, or</li>
@@ -1159,8 +1187,8 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
         <h5>5.2.1.5 <dfn id="team-rep-wg">Team Representative in a Working Group</dfn></h5>
         <p>An individual is a Team representative in a Working Group when so designated by W3C management.</p>
-        <p>A Team representative participates in a Working Group from the moment the individual joins the group until any of the following
-          occurs:</p>
+        <p>A Team representative participates in a Working Group from the moment the individual joins the group until any of
+          the following occurs:</p>
 
         <ul>
           <li>the group closes, or</li>
@@ -1180,8 +1208,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <p>W3C creates a charter based on interest from the Members and Team. The Team <em class="rfc2119">must</em> notify
           the Advisory Committee when a charter for a new Working Group or Interest Group is in development. This is intended
           to raise awareness, even if no formal proposal is yet available. Advisory Committee representatives
-          <em class="rfc2119">may</em> provide feedback on the <a href="#ACCommunication">Advisory Committee discussion list</a>.
-          </p>
+          <em class="rfc2119">may</em> provide feedback on the <a href="#ACCommunication">Advisory Committee discussion list</a>.</p>
 
         <p>W3C <em class="rfc2119">may</em> begin work on a Working Group or Interest Group charter at any time.</p>
 
@@ -1195,9 +1222,9 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <p>The Director's Call for Review of a substantively modified charter <em class="rfc2119">must</em> highlight
           important changes (e.g., regarding deliverables or resource allocation) and include rationale for the changes.</p>
 
-        <p>Transition Requests to First Public Working Draft or <a href="#last-call">Candidate Recommendation</a> will not normally be approved while a
-          Working Group's charter is undergoing, or awaiting a Director's Decision on, an Advisory Committee Review, until the
-          Director issues a Call for Participation for the Working Group.</p>
+        <p>Transition requests to First Public Working Draft or <a href="#last-call">Candidate Recommendation</a> will not normally
+          be approved while a Working Group's charter is undergoing, or awaiting a Director's decision on, an
+          Advisory Committee Review, until the Director issues a Call for Participation for the Working Group.</p>
 
         <h4>5.2.4 <dfn id="cfp">Call for Participation in a Working Group or Interest Group</dfn></h4>
 
@@ -1205,12 +1232,12 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
           issue a Call for Participation to the Advisory Committee. Charters <em class="rfc2119">may</em> be amended based on
           review comments before the Director issues a Call for Participation. </p>
 
-        <p>If a charter includes deliverables that continue work on documents for which a Reference Draft or 
-          <a href="#last-call">Candidate Recommendation</a> have previously been published (i.e there has been an
-          Exclusion Opportunity per <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-exclusion-with">section 4.1</a> of the
-          <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]),
-          the Director <em class="rfc2119">must not</em> issue a call for participation less
-          than 60 days after the beginning of the Advisory Committee Review of the charter.</p>
+        <p>If a charter includes deliverables that continue work on a document for which a Reference Draft or 
+          <a href="#last-call">Candidate Recommendation</a> has previously been published (i.e there has been an
+          Exclusion Opportunity per <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-exclusion-with">section 4.1</a>
+          of the <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a>
+          [<a href="#ref-patentpolicy">PUB33</a>]), the Director <em class="rfc2119">must not</em> issue a call for participation
+          less than 60 days after the beginning of the Advisory Committee Review of the charter.</p>
 
         <p>For a new group, this announcement officially creates the group. The announcement <em class="rfc2119">must</em>
           include a reference to the <a href="#WGCharter">charter</a>, the name(s) of the group's
@@ -1275,18 +1302,17 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
          <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>].</p>
 
         <p>For every Recommendation Track deliverable that continues work on a Working Draft (WD) published under any other Charter
-          (including a predecessor group of the same name), for which an Exclusion Opportunity per
-          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-exclusion-with">section 4.1</a> of the
-          <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]
-          has occurred, the description of that deliverable in the proposed charter of the adopting Working Group
+          (including a predecessor group of the same name), for which there is an existing Reference Draft or
+          Candidate Recommendation, the description of that deliverable in the proposed charter of the adopting Working Group
           <em class="rfc2119">must</em> provide the following information:</p>
 
         <ul>
-          <li>The title, stable URL, and publication date of the Working Draft which will serve as the basis for work on the
-            deliverable</li>
+          <li>The title, stable URL, and publication date of the <dfn>Adopted Working Draft</dfn> which will serve as the basis
+            for work on the deliverable</li>
           <li>The title, stable URL, and publication date of the most recent Reference Draft or
             <a href="#last-call">Candidate Recommendation</a> which triggered an Exclusion Opportunity per the Patent Process</li>
-          <li>The stable URL of the Working Group charter under which the most recent Working Draft which triggered an Exclusion Opportunity was published.</li>
+          <li>The stable URL of the Working Group charter under which the most recent Reference Draft or Candidate Recommendation
+            was published.</li>
         </ul>
 
         <p>The <dfn>Reference Draft</dfn> is the latest Working Draft published within 90 days of the 
@@ -1294,10 +1320,14 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
           <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-exclusion-with">section 4.1</a> of the
           <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>].</p>
 
-        <p>The adopted Working Draft and the most recent Reference Draft or <a href="#last-call">Candidate Recommendation</a>
+        <p>The Adopted Working Draft and the most recent Reference Draft or <a href="#last-call">Candidate Recommendation</a>
           <em class="rfc2119">must</em> each be adopted in their entirety and without any modification. The proposed charter
           <em class="rfc2119">must</em> state that the most recent Reference Draft or Candidate Recommendation
-          is the Reference Draft or Candidate Recommendation, respectively, of the specification in the Working Group.</p>
+          is deemd to be the Reference Draft or Candidate Recommendation in the adopting Working Group, and that the
+          Exclusion Opportunity that arose as a consequence of publishing a First Public Working Draft or Candidate Recommendation
+          has finished, meaning any exclusions against those drafts must be made on joining the group, as per 
+          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-join">section 4.3</a> of the
+          <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>]</p>
 
         <p>The Director <em class="rfc2119">must not</em> issue a call for participation less than 60 days after the beginning of
           an Advisory Committee Review for a charter that continues work on a Reference Draft or Candidate for which an 
@@ -1497,19 +1527,21 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <h4 id="transition-reqs">6.2.2 Advancement on the Recommendation Track</h4>
 
-      <p>For <em>all</em> requests to advance a specification to a new maturity level other than Note the Working Group:</p>
+      <p>For <em>all</em> <dfn>Transition Requests</dfn>, to advance a specification to a new maturity level other than Note,
+        the Working Group:</p>
 
       <ul>
         <li><em class="rfc2119">must</em> record the group's decision to request advancement.</li>
         <li><em class="rfc2119">must </em> obtain Director approval.</li>
-        <li><em class="rfc2119 ">must</em> provide public documentation of all <a href="#substantive-change">substantive changes</a> to the
+        <li><em class="rfc2119 ">must</em> provide public documentation of all
+          <a href="#substantive-change">substantive changes</a> to the
           technical report since the previous publication.</li>
-        <li><em class="rfc2119">must</em> <a href="#formal-address">formally address</a> all issues raised about the document since the
-          previous maturity level.</li>
+        <li><em class="rfc2119">must</em> <a href="#formal-address">formally address</a> all issues raised about the document
+          since the previous maturity level.</li>
         <li><em class="rfc2119">must</em> provide public documentation of any <a href="#FormalObjection">Formal Objections</a>.</li>
         <li><em class="rfc2119">should</em> provide public documentation of changes that are not substantive.</li>
-        <li><em class="rfc2119">should</em> report which, if any, of the Working Group's requirements for this document have changed since
-          the previous step.</li>
+        <li><em class="rfc2119">should</em> report which, if any, of the Working Group's requirements for this document have 
+          changed since the previous step.</li>
         <li><em class="rfc2119">should</em> report any changes in dependencies with other groups.</li>
         <li><em class="rfc2119">should</em> provide information about implementations known to the Working Group.</li>
       </ul>
@@ -1518,8 +1550,9 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         approval is normally fairly automatic. For later stages, especially transition to Candidate or Proposed Recommendation,
         there is usually a formal review meeting to ensure the requirements have been met before Director's approval is given.</p>
 
-      <p>Transition Requests to First Public Working Draft or <a href="#last-call">Candidate Recommendation</a> will not normally be approved while a
-        Working Group's charter is undergoing or awaiting a Director's Decision on an Advisory Committee Review.</p>
+      <p>Transition Requests to First Public Working Draft or <a href="#last-call">Candidate Recommendation</a> will not normally 
+        be approved while a Working Group's charter is undergoing or awaiting a Director's decision on an
+        Advisory Committee Review.</p>
 
       <h4 id="doc-reviews">6.2.3 Reviews and Review Responsibilities</h4>
       <p>A document is available for review from the moment it is first published. Working Groups <em class="rfc2119">should</em> <a href="#formal-address">formally
@@ -1690,20 +1723,22 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <li><em class="rfc2119">may</em> identify features in the document as "at risk". These features <em class="rfc2119">may</em> be
           removed before advancement to Proposed Recommendation without a requirement to publish a new Candidate Recommendation.</li>
       </ul>
-      <p>The Director <em class="rfc2119">must</em> announce the publication of a revised Candidate Recommendation to other W3C groups and
-        the Public.</p>
+      <p>The Director <em class="rfc2119">must</em> announce the publication of a revised Candidate Recommendation to 
+        other W3C groups and the Public.</p>
       <h3 id="rec-pr">6.5 Proposed Recommendation</h3>
       <p>In addition to meeting the <a href="#transition-reqs">general requirements for advancement</a>,</p>
       <ul>
-        <li>The status information <em class="rfc2119">must</em> specify the deadline for Advisory Committee review, which <em class="rfc2119">must</em>
-          be <strong>at least</strong> 28 days after the publication of the Proposed Recommendation and <em class="rfc2119">should</em> be
-          at least 10 days after the end of the last Exclusion Opportunity per <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Exclusion">section
-            4</a> of the <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>].</li>
+        <li>The status information <em class="rfc2119">must</em> specify the deadline for Advisory Committee review, which
+          <em class="rfc2119">must</em> be <strong>at least</strong> 28 days after the publication of the
+          Proposed Recommendation and <em class="rfc2119">should</em> be at least 10 days after the end of the
+          last Exclusion Opportunity per
+          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Exclusion">section 4</a> of the
+          <a href="https://www.w3.org/Consortium/Patent-Policy">W3C Patent Policy</a> [<a href="#ref-patentpolicy">PUB33</a>].</li>
       </ul>
       <p>A Working Group:</p>
       <ul>
-        <li><em class="rfc2119">must</em> show adequate <a href="#implementation-experience">implementation experience</a> except where an
-          exception is approved by the Director,</li>
+        <li><em class="rfc2119">must</em> show adequate <a href="#implementation-experience">implementation experience</a>
+          except where an exception is approved by the Director,</li>
         <li><em class="rfc2119">must</em> show that the document has received <a href="#wide-review">wide review,</a></li>
         <li><em class="rfc2119">must</em> show that all issues raised during the Candidate Recommendation review period other than by
           Advisory Committee representatives acting in their formal AC representative role have been <a href="#formal-address">formally
@@ -1816,19 +1851,22 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
             <path d="M220,103h-160v-63h43" fill="none"></path>
             <text x="200" y="100" stroke-width="0.2" fill="black" font-size="10">Yes</text>
             <polygon points="103,38 108,40 103,42"></polygon> </g> </svg></p>
+
       <h4 id="errata">6.7.1 Errata Management</h4>
-      <p>Tracking errors is an important part of a Working Group's ongoing care of a Recommendation; for this reason, the scope of a Working
-        Group charter generally allows time for work after publication of a Recommendation. In this Process Document, the term "erratum"
-        (plural "errata") refers to any error that can be resolved by one or more changes in classes 1-3 of section <a href="#correction-classes">7.2.5
-          Classes of Changes</a>.</p>
-      <p>Working Groups <em class="rfc2119">must</em> keep a record as errors are reported by readers and implementers. Such error reports
-        <em class="rfc2119">should</em> be processed no less frequently than quarterly. Readers of the Recommendation <em class="rfc2119">should</em>
+      <p>Tracking errors is an important part of a Working Group's ongoing care of a Recommendation; for this reason,
+        the scope of a Working Group charter generally allows time for work after publication of a Recommendation.
+        In this Process Document, the term "erratum" (plural "errata") refers to any error that can be resolved by one or more
+        changes in classes 1-3 of section <a href="#correction-classes">7.2.5 Classes of Changes</a>.</p>
+      <p>Working Groups <em class="rfc2119">must</em> keep a record as errors are reported by readers and implementers.
+        Such error reports <em class="rfc2119">should</em> be processed no less frequently than quarterly. Readers of the
+        Recommendation <em class="rfc2119">should</em>
         be able easily to find and see the errata that apply to that specific Recommendation.</p>
       <p> Working groups may decide how to document errata. The best practice is a document that identifies itself as based on the
-        Recommendation text and clearly identifies the errata and any proposed corrections; other approaches include various forms of an
-        errata page, possibly auto-generated from a database.</p>
-      <p>An erratum is resolved by an informative, "proposed" correction generated by the Working Group. A correction becomes part of the
-        Recommendation by the process for Revising a Recommendation described in the next section.</p>
+        Recommendation text and clearly identifies the errata and any proposed corrections; other approaches include various forms
+        of an errata page, possibly auto-generated from a database.</p>
+      <p>An erratum is resolved by an informative, "proposed" correction generated by the Working Group. A correction becomes part
+        of the Recommendation by the process for Revising a Recommendation described in the next section.</p>
+
       <h4 id="revised-rec">6.7.2 Revising a Recommendation</h4>
       <p>A Working group <em class="rfc2119">may</em> request republication of a Recommendation, or W3C <em class="rfc2119">may</em>
         republish a Recommendation, to make corrections that do not result in any changes to the text of the specification.</p>
@@ -1882,7 +1920,9 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
         <a href="https://www.w3.org/Consortium/Patent-Policy#sec-PAG-conclude">section 7.5</a>.</p>
 
       <p>W3C may obsolete a Recommendation, for example if the W3C Community decides that the Recommendation
-        no longer represents best practices, or is not adopted and is unlikely to be adopted.</p>
+        no longer represents best practices, or is not adopted and is unlikely to be adopted. Obsoletion may be reversed,
+        using the same process as for obsoleting a Recommendation, if for example a specification is later more broadly
+        adopted.</p>
 
       <p>W3C only rescnds or obsoletes entire Recommendations. To rescind or obsolete some part of a Recommendation,
         W3C follows the process for <a href="#rec-modify">modifying a Recommendation</a>.</p>
@@ -1910,7 +1950,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <ul>
         <li>Announce the proposal to all Working Group Chairs, and to the Public.</li>
-        <li>indicate that this is a Proposal to Rescind, or a proposal to Obsolete, a Recommendation</li>
+        <li>indicate that this is a proposal to Rescind, Obsolete, or reverse the Obsoletion of, a Recommendation</li>
         <li>identify the Recommendation by URL.</li>
         <li>publish a rationale for rescinding the Recommendation.</li>
         <li>identify known dependencies and solicit review from all dependent Working Groups</li>
@@ -1951,7 +1991,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       <h2 id="ReviewAppeal">7 Advisory Committee Reviews, Appeals, and Votes</h2>
 
       <p>This section describes how the Advisory Committee reviews proposals from the Director and how Advisory Committee
-        representatives initiate an Advisory Committee Appeal of a W3C decision or Director's Decision. A 
+        representatives initiate an Advisory Committee Appeal of a W3C decision or Director's decision. A 
         <dfn id="def-w3c-decision">W3C decision</dfn> is one where the Director (or the Director's delegate) has exercised the role
         of assessing consensus after an <a href="#ACReview">Advisory Committee review</a>.</p>
 
@@ -2020,9 +2060,9 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <p>When a W3C decision is made following an <a href="#ACReview">Advisory Committee review</a>, Advisory Committee
         representatives <em class="rfc2119">may</em> initiate an <a href="#def-w3c-decision">Advisory Committee Appeal</a>.
-        only appeal when there is <a href="#def-Dissent">dissent</a>. These W3C decisions are identified in the sections that
-        explain the requirements for the decisions and include decisions related to group creation and modification, certain
-        maturity levels for Recommendation Track documents and the Process document.</p>
+        These W3C decisions are identified in the sections that explain the requirements for the decisions and include decisions
+        related to group creation and modification, and changing maturity levels for Recommendation Track documents and the
+        Process document.</p>
 
       <p>Advisory Committee representatives <em class="rfc2119">may</em> also initiate an appeal for certain Director's decisions
         that do not involve an Advisory Committee review. These, too, are identified in the sections which describe the
@@ -2036,7 +2076,7 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <p>An Advisory Committee representative initiates an appeal by sending a request to the Team. Within one week the Team 
         <em class="rfc2119">must</em> announce the appeal process to the Advisory Committee and provide a mechanism for
-        Advisory Committee representatives to respond with a statement of support (yes, no or abstain) and comments, as desired.
+        Advisory Committee representatives to respond with a statement of support (yes, no, or abstain) and comments, as desired.
         The archive of these comments <em class="rfc2119">must</em> be Member-visible. If, within
         <span class="time-interval">one week</span> of the Team's announcement, 5% or more of the Advisory Committee support the
         appeal request, the Team <em class="rfc2119">must</em> organize an appeal vote asking the Advisory Committee to approve or
@@ -2456,6 +2496,15 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
       <p>The notable changes include:</p>
 
       <h3>Current draft</h3>
+
+      <ul>
+        <li>Further editorial clarification that an Obsolete Recommendation can be "unobsoleted"
+          - section <a href="#rec-rescind">6.9</a></li>
+        <li>More clarification for charters which continue work that has already had an Exclusion Opportunity
+          - <a href="#CharterReview">5.2.3</a>, <a href="#cfp">5.2.4</a>, and <a href="#WGCharter">5.2.6</a>.</li>
+      </ul>
+
+      <h3>Between the <a href="https://dvcs.w3.org/hg/AB/raw-file/80f98ce79b35/cover.html">18 July 2016 draft</a> and the <a href="https://dvcs.w3.org/hg/AB/raw-file/f070f753bcea/cover.html">10 July 2016 draft</a>:</h3> 
 
       <ul>
         <li>Editorial clarification of the status of an Obsolete Recommendation - section <a href="#rec-rescind">6.9</a></li>
