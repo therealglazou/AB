@@ -21,9 +21,18 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
      g g:hover path, g g:hover polygon, g g:hover ellipse { stroke-width: 4}
      :focus text, g g:hover text { stroke: black; stroke-width: .5}
 
+/* for editing */
+      del { display: none; }
+      ins { text-decoration: none; }
+      body.visible-changes del { text-decoration: none; display: unset; background-color: red; }
+      body.visible-changes ins { background-color: yellow; }
+      body.visible-changes dl,
+      body.visible-changes ul,
+      body.visible-changes ol { background-color: inherit }
+
 </style> <!--[if lt IE 9]><script src='undefined://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
   </head>
-  <body>
+  <body class="visible-changes">
     <div class="head"><a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
       <h1>W3C Editor's Draft Process Document</h1>
       <h2 class="notoc">16 December 2016 Editor's Draft</h2>
@@ -1934,33 +1943,56 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <h4 id="correction-classes">6.2.5 Classes of Changes</h4>
 
-      <p>This document distinguishes the following 4 classes of changes to a specification. The first two classes of change are
-        considered <dfn id="editorial-change">editorial changes</dfn>, the latter two
+      <p>This document distinguishes the following 4 classes of changes to a <del>specification</del><ins>document</ins>. The first two classes of change are
+        considered <dfn id="editorial-change">minor changes</dfn>, the latter two
         <dfn id="substantive-change">substantive changes</dfn>.</p>
-      <dl>
+    <dl>
         <dt>1. No changes to text content</dt>
         <dd>These changes include fixing broken links, style sheets or invalid markup.</dd>
-        <dt>2. Corrections that do not affect conformance</dt>
-        <dd>Changes that reasonable implementers would not interpret as changing architectural or interoperability requirements
-          or their implementation. Changes which resolve ambiguities in the specification are considered to change 
-          (by clarification) the implementation requirements and do not fall into this class.</dd>
-        <dd>Examples of changes in this class include correcting non-normative code examples where the code clearly conflicts with
-          normative requirements, clarifying informative use cases or other non-normative text, fixing typos or grammatical errors
-          where the change does not change implementation requirements. If there is any doubt or dissent as to whether requirements
-          are changed, such changes do not fall into this class.</dd>
-        <dt>3. Corrections that do not add new features</dt>
-        <dd>These changes <em class="rfc2119">may</em> affect conformance to the specification. A change that affects conformance
-          is one that:
-          <ul>
-            <li>makes conforming data, processors, or other conforming agents become non-conforming according to the new version,
-              or</li>
-            <li>makes non-conforming data, processors, or other agents become conforming, or</li>
-            <li>clears up an ambiguity or under-specified part of the specification in such a way that data, a processor, or an
-              agent whose conformance was once unclear becomes clearly either conforming or non-conforming.</li>
-          </ul>
+        <dt>2. <ins>Minor corrections</ins><del>Corrections that do not affect conformance</del></dt>
+        <dd><ins>
+            <dl>
+              <dt>2.1. For Technical Documents</dt>
+              <dd>Corrections that do not affect conformance. Changes that reasonable implementers would not interpret as changing architectural or interoperability requirements or their implementation. Changes which resolve ambiguities in the specification are considered to change (by clarification) the implementation requirements and do not fall into this class.</dd>
+              <dt><ins>2.2. For Charters and the Process Document</ins></dt>
+              <dd>Changes that the Advisory Board or the Advisory Committee would not interpret as changing the scope or purpose of the Review.</dd>
+            </dl>
+          </ins></dd>
+        <dd><del>Examples of changes in this class include correcting non-normative code examples where the code clearly conflicts with normative requirements, clarifying informative use cases or other non-normative text, fixing typos or grammatical errors where the change does not change implementation requirements. If there is any doubt or dissent as to whether requirements are changed, such changes do not fall into this class.</del><br>
         </dd>
+        <dt>3. <ins>Major corrections</ins><del>Corrections that do not add new features</del></dt>
+        <dd><del>These changes <em class="rfc2119">may</em> affect conformance to the specification. A change that affects conformance is one that:
+            <ul>
+              <li>makes conforming data, processors, or other conforming agents become non-conforming according to the new version, or</li>
+              <li>makes non-conforming data, processors, or other agents become conforming, or</li>
+              <li>clears up an ambiguity or under-specified part of the specification in such a way that data, a processor, or an agent whose conformance was once unclear becomes clearly either conforming or non-conforming.</li>
+            </ul>
+          </del> <ins>
+            <dl>
+              <dt>3.1. For Technical Documents</dt>
+              <dd>Corrections that do not add new features. These changes <em
+                  class="rfc2119">may</em> affect conformance to the specification. A change that affects conformance is one that:
+                <ul>
+                  <li>makes conforming data, processors, or other conforming agents become non-conforming according to the new version, or</li>
+                  <li>makes non-conforming data, processors, or other agents become conforming, or</li>
+                  <li>clears up an ambiguity or under-specified part of the specification in such a way that data, a processor, or an agent whose conformance was once unclear becomes clearly either conforming or non-conforming.</li>
+                </ul>
+              </dd>
+              <dt>3.2. For Charters or the Process Document</dt>
+              <dd>Changes that the Advisory Board or the Advisory Committee would interpret as changing the scope or purpose of the Review but that
+                  are supported by a clear and documented consensus, without objection, among Reviewers of the proposed Document.</dd>
+            </dl>
+          </ins></dd>
         <dt>4. New features</dt>
-        <dd>Changes that add a new functionality, element, etc.</dd>
+        <dd><ins>
+            <dl>
+              <dt>4.1. For Technical Documents</dt>
+              <dd>Changes that add a new functionality, element, etc.</dd>
+              <dt>4.2. For Charters and the Process Document</dt>
+              <dd>Major changes to the Document or changes that would potentially change the Reviews of the document.<br>
+              </dd>
+            </dl>
+            <del>Changes that add a new functionality, element, etc.</del></ins></dd>
       </dl>
 
       <h3 id="working-draft">6.3 Working Draft</h3>
@@ -2542,9 +2574,12 @@ Advisory Board, Working Group, Coordination Group, Interest Group, W3C Activity,
 
       <ol>
         <li>The proposal is approved, possibly with minor changes integrated.</li>
-        <li>The proposal is approved, possibly with <a href="#substantive-change">substantive changes</a> integrated. In this case
-          the Director's announcement <em class="rfc2119">must</em> include rationale for the decision to advance the document
-          despite the proposal for a substantive change.</li>
+        <li>The proposal is approved, possibly with <a href="#substantive-change">substantive changes</a> integrated.
+            <ins>Substantive changes to proposed Charters or Process Document <em class="rfc2119">should</em> be
+            submitted, with the rationale for the decision, for review to the Advisory Board that can declare them
+            too substantive for approval without additional work. </ins>In <del>this </del>case <ins>of approval,</ins>
+            the Director's announcement <em class="rfc2119">must</em> include rationale for the decision to advance the
+            document despite the proposal for a substantive change.</li>
         <li>The proposal is returned for additional work, with a request to the initiator to
           <a href="#formal-address">formally address</a> certain issues.</li>
         <li>The proposal is rejected.</li>
